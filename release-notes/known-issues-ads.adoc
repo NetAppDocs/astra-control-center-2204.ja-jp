@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: release-notes/known-issues-ads.html 
+keywords: astra, control center, ads, data store, bugs, known issues, problems 
+summary: 既知の問題は、このリリースの製品を正常に使用できない可能性のある問題を特定します。 
+---
+= Astra Data Store およびこの Astra Control Center リリースでの既知の問題
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/release-notes/
+
+
+既知の問題は、このリリースの製品を正常に使用できない可能性のある問題を特定します。
+
+https://docs.netapp.com/us-en/astra-data-store/release-notes/known-issues.html["これらの既知の問題を参照してください"] これは、Astra Control Centerの最新リリースでAstraデータストアの管理に影響を与える可能性があります。
+
+
+
+== 詳細については、こちらをご覧ください
+
+* link:../release-notes/known-issues.html["既知の問題"]
+* link:../release-notes/known-limitations.html["既知の制限"]
+

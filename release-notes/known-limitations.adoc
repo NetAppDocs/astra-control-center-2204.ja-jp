@@ -1,0 +1,172 @@
+---
+sidebar: sidebar 
+permalink: release-notes/known-limitations.html 
+keywords: astra, control center, limitations, known limitations, interoperability 
+summary: 既知の制限事項は、このリリースの製品でサポートされていないプラットフォーム、デバイス、機能、または製品と正しく相互運用できない機能を特定します。これらの制限事項を慎重に確認してください 
+---
+= 既知の制限
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/release-notes/
+
+
+既知の制限事項は、このリリースの製品でサポートされていないプラットフォーム、デバイス、機能、または製品と正しく相互運用できない機能を特定します。これらの制限事項を慎重に確認してください
+
+.クラスタ管理の制限事項
+* <<The same cluster cannot be managed by two Astra Control Center instances>>
+* <<Astra Control Center cannot manage two identically named clusters>>
+
+
+.Role-Based Access Control （ RBAC ；ロールベースアクセス制御）の制限事項があります
+* <<A user with namespace RBAC constraints can add and unmanage a cluster>>
+* <<A member with namespace constraints cannot access the cloned or restored apps until admin adds the namespace to the constraint>>
+
+
+.アプリケーション管理の制限
+* <<App backups that are in progress cannot be stopped>>
+* <<Clones of apps installed using pass-by-reference operators can fail>>
+* <<In-place restore operations of apps that use a certificate manager are not supported>>
+* <<OLM-enabled and cluster-scoped operator deployed apps not supported>>
+* <<Apps deployed with Helm 2 are not supported>>
+
+
+.一般的な制限事項
+* <<S3 buckets in Astra Control Center do not report available capacity>>
+* <<Astra Control Center does not validate the details you enter for your proxy server>>
+* <<Existing connections to a Postgres pod causes failures>>
+* <<Backups and snapshots might not be retained during removal of an Astra Control Center instance>>
+
+
+
+
+== 2 つの Astra Control Center インスタンスで同じクラスタを管理することはできません
+
+別の Astra Control Center インスタンスでクラスタを管理する場合は、最初にを実行する必要があります link:../use/unmanage.html#stop-managing-compute["クラスタの管理を解除します"] 別のインスタンスで管理する前に、管理対象のインスタンスから管理します。管理対象からクラスタを削除したら、次のコマンドを実行してクラスタが管理対象外であることを確認します。
+
+[listing]
+----
+oc get pods n -netapp-monitoring
+----
+そのネームスペースでポッドを実行していないことを確認するか、ネームスペースを存在させないようにします。どちらかが true の場合、クラスタは管理対象外です。
+
+
+
+== Astra Control Center は、同じ名前の 2 つのクラスタを管理できません
+
+既存のクラスタと同じ名前のクラスタを追加しようとすると、処理に失敗します。この問題は、 Kubernetes 構成ファイルでクラスタ名のデフォルトを変更していない場合、通常は標準の Kubernetes 環境で発生します。
+
+回避策として、次の手順を実行します。
+
+. kubeadm -config 構成マップを編集します。
++
+[listing]
+----
+kubectl edit configmaps -n kube-system kubeadm-config
+----
+. 「 clusterName 」フィールドの値を「 Kubernetes 」（ Kubernetes のデフォルト名）から一意のカスタム名に変更します。
+. kubeconfig (`.kube/config`) を編集します。
+. クラスタ名を「 Kubernetes 」から一意のカスタム名に更新します（以下の例では「 xyz-cluster 」を使用します）。次の例に示すように 'clusters' および contexts の両方のセクションで更新を行います
++
+[listing, subs="+quotes"]
+----
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: ExAmPLERb2tCcjZ5K3E2Njk4eQotLExAMpLEORCBDRVJUSUZJQ0FURS0txxxxXX==
+    server: https://x.x.x.x:6443
+  *name: xyz-cluster*
+contexts:
+- context:
+    *cluster: xyz-cluster*
+    namespace: default
+    user: kubernetes-admin
+  name: kubernetes-admin@kubernetes
+current-context: kubernetes-admin@kubernetes
+----
+
+
+
+
+== ネームスペースの RBAC に制約があるユーザは、クラスタの追加と管理解除を行うことができます
+
+ネームスペースの RBAC に制限があるユーザは、クラスタの追加または管理解除を行うことができません。現在の制限により、 Astra は、このようなユーザによるクラスタの管理解除を妨げません。
+
+
+
+== 名前空間の制約を持つメンバは、管理者が名前空間を制約に追加するまで、クローンまたは復元されたアプリケーションにアクセスできません
+
+名前空間の名前 /ID または名前空間ラベルによって RBAC の制約を受けているメンバーユーザーは ' 同じクラスタ上の新しい名前空間 ' または組織のアカウント内の他のクラスタにアプリケーションを複製またはリストアできますただし、同じユーザが、クローニングまたはリストアされたアプリケーションに新しいネームスペースからアクセスすることはできません。クローンまたはリストア操作によって新しい名前空間が作成されると ' アカウントの管理者 / 所有者は ' メンバーのユーザー・アカウントを編集し ' 影響を受けるユーザーの役割制約を更新して ' 新しい名前空間へのアクセスを許可できます
+
+
+
+== 実行中のアプリケーションのバックアップを停止することはできません
+
+実行中のバックアップを停止する方法はありません。バックアップを削除する必要がある場合は、完了するまで待ってから、の手順を実行してください link:../use/protect-apps.html#delete-backups["バックアップを削除します"]。失敗したバックアップを削除するには、を使用します link:https:/docs.netapp.com/us-en/astra-automation/index.html["Astra Control API の略"^]。
+
+
+
+== パスバイリファレンス演算子を使用してインストールされたアプリケーションのクローンが失敗することがあります
+
+Astra Control は、名前空間を対象とした演算子でインストールされたアプリケーションをサポートします。これらの演算子は、一般に「パスバイリファレンス」アーキテクチャではなく「パスバイ値」で設計されています。これらのパターンに続くいくつかのオペレータアプリを次に示します。
+
+* https://github.com/k8ssandra/cass-operator/tree/v1.7.1["Apache K8ssandra"^]
++
+
+NOTE: K8ssandra では、 In Place リストア処理がサポートされます。新しいネームスペースまたはクラスタにリストアするには、アプリケーションの元のインスタンスを停止する必要があります。これは、ピアグループ情報がインスタンス間通信を行わないようにするためです。アプリケーションのクローニングはサポートされていません。
+
+* https://github.com/jenkinsci/kubernetes-operator["Jenkins CI"^]
+* https://github.com/percona/percona-xtradb-cluster-operator["Percona XtraDB クラスタ"^]
+
+
+Astra Control では、「パスバイリファレンス」アーキテクチャ（ CockroachDB オペレータなど）で設計されたオペレータをクローニングできない場合があります。クローニング処理では、クローニング処理の一環として独自の新しいシークレットが存在する場合でも、クローニングされたオペレータがソースオペレータから Kubernetes シークレットを参照しようとします。Astra Control がソースオペレータの Kubernetes シークレットを認識しないため、クローニング処理が失敗する場合があります。
+
+
+
+== 証明書マネージャを使用するアプリケーションの In Place リストア処理はサポートされていません
+
+このリリースの Astra Control Center では、証明書マネージャを使用したアプリのインプレースリストアはサポートされていません。別のネームスペースへのリストア処理とクローニング処理がサポートされています。
+
+
+
+== OLM 対応およびクラスタ対象のオペレータ展開アプリケーションはサポートされていません
+
+Astra Control Center は、クラスタを対象としたオペレータによるアプリケーション管理アクティビティをサポートしません。
+
+
+
+== Helm 2 で展開されたアプリケーションはサポートされていません
+
+Helm を使用してアプリケーションを展開する場合、 Astra Control Center には Helm バージョン 3 が必要です。Helm 3 （または Helm 2 から Helm 3 にアップグレード）を使用して展開されたアプリケーションの管理とクローニングが完全にサポートされています。詳細については、を参照してください link:../get-started/requirements.html["Astra Control Center の要件"]。
+
+
+
+== Astra Control Center の S3 バケットは、使用可能容量を報告しません
+
+Astra Control Center で管理されているアプリケーションのバックアップまたはクローニングを行う前に、 ONTAP または StorageGRID 管理システムでバケット情報を確認します。
+
+
+
+== Astra Control Center は、プロキシサーバー用に入力した詳細を検証しません
+
+実行することを確認してください link:../use/monitor-protect.html#add-a-proxy-server["正しい値を入力します"] 接続を確立するとき。
+
+
+
+== Postgres ポッドへの既存の接続が原因で障害が発生します
+
+Postgres ポッドで操作を実行する場合は、 psql コマンドを使用するためにポッド内で直接接続しないでください。Astra Control では、 psql にアクセスしてデータベースをフリーズし、解凍する必要があります。既存の接続がある場合、スナップショット、バックアップ、またはクローンは失敗します。
+
+
+
+== Astra Control Center インスタンスの削除中にバックアップとスナップショットが保持されない場合があります
+
+評価用ライセンスをお持ちの場合は、 Astra Control Center に障害が発生したときに ASUP を送信していないときにデータが失われないように、アカウント ID を必ず保存してください。
+
+
+
+== 詳細については、こちらをご覧ください
+
+* link:../release-notes/known-issues.html["既知の問題"]
+* link:../release-notes/known-issues-ads.html["Astra Data Store およびこの Astra Control Center リリースでの既知の問題"]
+
