@@ -1059,7 +1059,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-08-03 20:56:17 +0000">08/03/2022</time>
+    <time datetime="2022-08-11 17:07:01 +0000">08/11/2022</time>
     
   
 
@@ -1074,83 +1074,10 @@
 <div class="paragraph">
 <p>お先にどうぞ <a href="../get-started/setup_overview.html#add-cluster">"Astra Control 管理にクラスタを追加"</a>では、クラスターにアプリケーションをインストールし（ Astra Control の外部）、 Astra Control の [ アプリ ] ページに移動して、アプリケーションとそのリソースの管理を開始できます。</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="アプリケーション管理の要件">アプリケーション管理の要件</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>Astra Control には、次のアプリケーション管理要件があります。</p>
+<p>詳細については、を参照してください <a href="../get-started/requirements.html#application-management-requirements">"アプリケーション管理の要件"</a>。</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>* ライセンス * ： Astra Control Center を使用してアプリケーションを管理するには、 Astra Control Center ライセンスが必要です。</p>
-</li>
-<li>
-<p>* 名前空間 * ： Astra Control では、アプリケーションが複数の名前空間にまたがることはありませんが、名前空間には複数のアプリケーションを含めることができます。</p>
-</li>
-<li>
-<p>* StorageClass* ： StorageClass が明示的に設定されたアプリケーションをインストールし、そのアプリケーションをクローニングする必要がある場合、クローン処理のターゲットクラスタに最初に指定された StorageClass が必要です。明示的に StorageClass を設定したアプリケーションを、同じストレージクラスを使用しないクラスタにクローニングすると、失敗します。</p>
-</li>
-<li>
-<p>* Kubernetes リソース * ： Astra Control で収集されない Kubernetes リソースを使用するアプリケーションには、アプリケーションデータの完全な管理機能がない可能性があります。Astra Control では、次の Kubernetes リソースが収集されます。</p>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタロール</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ClusterRoleBinding</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ConfigMap</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CustomResourceDefinition の場合</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">CustomResource の場合</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cronjob</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">デモンセット（ DemonSet ）</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">HorizontalPodAutoscaler のように表示されます</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">入力</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DeploymentConfig</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">MutingWebhook</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">PersistentVolumeClaim のように表示され</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ポッド</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">PodDisruptionBudget （予算の廃止）</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">PodTemplate</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ネットワークポリシー</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ReplicaSet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ロール</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">RoleBinding です</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ルート</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">秘密</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">サービス</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">サービスアカウント</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Stateful役立つ セット</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">検証 Webhook</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
-</li>
-</ul>
+</div>
 </div>
 <div class="sect2">
 <h3 id="サポートされているアプリインストール方法">サポートされているアプリインストール方法</h3>
@@ -1202,8 +1129,6 @@
 </td>
 </tr>
 </table>
-</div>
-</div>
 </div>
 </div>
 <div class="sect1">
