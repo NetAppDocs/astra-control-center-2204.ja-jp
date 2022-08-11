@@ -1537,10 +1537,6 @@
   <block id="1cf97dd1e6f6c8888d8fa6dcede7fac9" category="inline-link-macro">Astra Control 管理にクラスタを追加</block>
   <block id="5762e45693912834af0b056c7343e9fa" category="paragraph">お先にどうぞ <block ref="093b5cb12bf9a5cd405873202b116b04" category="inline-link-macro-rx"></block>では、クラスターにアプリケーションをインストールし（ Astra Control の外部）、 Astra Control の [ アプリ ] ページに移動して、アプリケーションとそのリソースの管理を開始できます。</block>
   <block id="7b7f260c982647b3aee51c681be792ef" category="section-title">アプリケーション管理の要件</block>
-  <block id="07eb1eefb9996b52d1fdfe23101a2b03" category="paragraph">Astra Control には、次のアプリケーション管理要件があります。</block>
-  <block id="040814594415b3be75eca728578ba39d" category="list-text">* ライセンス * ： Astra Control Center を使用してアプリケーションを管理するには、 Astra Control Center ライセンスが必要です。</block>
-  <block id="a23e8e619b2ffd1ec1e37fd1f16eee74" category="list-text">* StorageClass* ： StorageClass が明示的に設定されたアプリケーションをインストールし、そのアプリケーションをクローニングする必要がある場合、クローン処理のターゲットクラスタに最初に指定された StorageClass が必要です。明示的に StorageClass を設定したアプリケーションを、同じストレージクラスを使用しないクラスタにクローニングすると、失敗します。</block>
-  <block id="7a9f49c6cd6dca3bc35b755523c76570" category="list-text">* Kubernetes リソース * ： Astra Control で収集されない Kubernetes リソースを使用するアプリケーションには、アプリケーションデータの完全な管理機能がない可能性があります。Astra Control では、次の Kubernetes リソースが収集されます。</block>
   <block id="b8f3bc1c4097cf013ff9bb82ec30af2e" category="section-title">サポートされているアプリインストール方法</block>
   <block id="a117e5ae155bb69285242a4c89875dd6" category="list-text">* Helm 3 * ： Helm を使用してアプリケーションをインストールする場合、 Astra Control には Helm バージョン 3 が必要です。Helm 3 （または Helm 2 から Helm 3 にアップグレード）を使用してインストールされたアプリケーションの管理とクローニングが完全にサポートされています。Helm 2 でインストールされたアプリケーションの管理はサポートされていません。</block>
   <block id="1e98c3baca1e6d04cbb2c6a3e5f7a646" category="list-text">* オペレータが導入したアプリケーション * ： Astra Control は、名前空間を対象とした演算子を使用してインストールされたアプリケーションをサポートします。これらの演算子は、一般に「パスバイリファレンス」アーキテクチャではなく「パスバイ値」で設計されています。これらのパターンに続くいくつかのオペレータアプリを次に示します。</block>
@@ -2264,4 +2260,5 @@
   <block id="1eda8b1f4dfa35b119f2a579170d4546" category="sidebar">クレデンシャルを管理する</block>
   <block id="1d79052461351a56ef4f9bf9f5837f4a" category="sidebar">REST API で自動化</block>
   <block id="0b79795d3efc95b9976c7c5b933afce2" category="sidebar">はじめに</block>
+  <block id="d1736d27c7efe09a7fdb5f5e3b18e8dc" category="paragraph">詳細については、を参照してください <block ref="f6d2e41142da7ccda158b71b34630966" category="inline-link-macro-rx"></block>。</block>
 </blocks>
