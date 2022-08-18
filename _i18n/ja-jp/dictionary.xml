@@ -2261,4 +2261,5 @@
   <block id="0b79795d3efc95b9976c7c5b933afce2" category="sidebar">はじめに</block>
   <block id="d1736d27c7efe09a7fdb5f5e3b18e8dc" category="paragraph">詳細については、を参照してください <block ref="f6d2e41142da7ccda158b71b34630966" category="inline-link-macro-rx"></block>。</block>
   <block id="7710790456945bed9a23fff9f934b8fd" category="paragraph">Astra Control Centerを有効にするには、フルアプリケーションデータ管理機能を有効にするためのライセンスが必要です。Astra Control Center をライセンスなしで導入すると、システム機能が制限されていることを示すバナーが Web UI に表示されます。</block>
+  <block id="558e41f71155360e3f8ee151e27ea06f" category="paragraph">詳細については、を参照してください <block ref="ad125f0a3036e9b5f57b3a7077f489d9" category="inline-link-macro-rx"></block>。</block>
 </blocks>
