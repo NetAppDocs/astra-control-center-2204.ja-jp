@@ -18,11 +18,11 @@ Astra Control API を使用してストレージバックエンドを管理す�
 ストレージバックエンドの管理に関連して、次のタスクを実行できます。
 
 * link:../get-started/setup_overview.html#add-a-storage-backend["ストレージバックエンドを追加します"]
-* <<View storage backend details>>
-* <<Unmanage a storage backend>>
-* <<Update a storage backend license>>
-* <<Add nodes to a storage backend cluster>>
-* <<Remove a storage backend>>
+*  storage backend details
+*  a storage backend
+*  a storage backend license
+*  nodes to a storage backend cluster
+*  a storage backend
 
 
 

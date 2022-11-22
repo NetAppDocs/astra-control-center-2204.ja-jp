@@ -69,12 +69,12 @@ NOTE: Helm 2 でインストールされたアプリケーションはサポー�
 
 * アプリの管理
 +
-** <<Manage apps by namespace>>
-** <<Manage apps by Kubernetes label>>
+**  apps by namespace
+**  apps by Kubernetes label
 
 
-* <<Ignore apps>>
-* <<Unmanage apps>>
+*  apps
+*  apps
 
 
 
