@@ -429,7 +429,6 @@
   <block id="73c219a393057feacc35c345709d0eff" category="paragraph">Red Hat OpenShift を使用する場合は、 Red Hat 認定オペレータを使用して Astra Control Center をインストールできます。この手順を使用して、から Astra Control Center をインストールします<block ref="a0bebb9db4c42678b95afc86229a893d" category="inline-link-rx"></block> または、 Red Hat OpenShift Container Platform を使用します。</block>
   <block id="07d25e4715e49135a64667c0c238798e" category="inline-link-macro">残りのステップ</block>
   <block id="b34733c94c2ec2f94f6765fc88c9f8db" category="paragraph">この手順を完了したら、インストール手順に戻ってを実行する必要があります <block ref="3a285f0bf32f130cd082e260eb98d4dd" category="inline-link-macro-rx"></block> インストールが成功したかどうかを確認し、ログオンします。</block>
-  <block id="a711863513c11f3a6d86294acc7be0ba" category="list-title">必要なもの</block>
   <block id="2b305f607904d67cd2da521366334e8c" category="inline-link-macro">インストールを開始する前に、 Astra Control Center の導入環境を準備します</block>
   <block id="44e141a783b8346b1ee5c52bcf894d19" category="list-text"><block ref="689b20f2e0a9cb0a12bc48475b3f81ee" category="inline-link-macro-rx"></block>。</block>
   <block id="cffc15bb864472cd1fadfc05a2ff6ba0" category="list-text">OpenShift クラスタから、すべてのクラスタオペレータが正常な状態にあることを確認します（「 available 」は「 true 」）。</block>
@@ -498,7 +497,6 @@
   <block id="1d57e0a24077636df90da71912e901ba" category="list-text">デフォルトのストレージクラスは保持します。</block>
   <block id="6b9265a82fa5bd326052ec55e040a54a" category="list-text">CRD 処理の環境設定を定義します。</block>
   <block id="752136dc4b557a30d80aab0135d2d8d0" category="list-text">「 Create 」を選択します。</block>
-  <block id="0a20c90d5270bed19fcaf851778c663b" category="section-title">次の手順</block>
   <block id="510a796972d54f6936dbae0081373fc0" category="inline-link-macro">セットアップのタスク</block>
   <block id="25bd4bfe1fe1f3d4f00d0a880c5c7b69" category="paragraph">Astra Control Center が正しくインストールされたことを確認し、を完了します <block ref="3a285f0bf32f130cd082e260eb98d4dd" category="inline-link-macro-rx"></block> ログインしてください。さらに、の導入も完了します <block ref="c74ac040317626af0342a18a145cdbb7" category="inline-link-macro-rx"></block>。</block>
   <block id="b1151aae9531d2f5e85d085e8878cea6" category="summary">この FAQ は、質問に対する簡単な回答を探している場合に役立ちます。</block>
@@ -639,7 +637,6 @@
   <block id="a18ffe589f51b2e8842d425e72f3267a" category="list-text">。<block ref="a5882513c2df5d3067eddd81ae049c5c" category="inline-link-rx"></block> 入力コントローラに対応するものがすでに作成されている必要があります。</block>
   <block id="f249cbb12b555fa6b1b839d1fbb9cf54" category="list-text">V1.19 と v1.22 の間で Kubernetes のバージョンを使用している。</block>
   <block id="729bdb5319ea7e408d8db1fc3179d448" category="list-title">Nginx Ingress Controller の手順</block>
-  <block id="8a637503539b25b68130b6e8003579d9" category="inline-link">「 sKubernetes .io/tls 」と入力します</block>
   <block id="a980dad9ace20d62c935af0cd906e94b" category="inline-link">TLS シークレット</block>
   <block id="9f951818010de2aab97830e9f0c7256b" category="list-text">タイプのシークレットを作成します<block ref="37832da3e75d3d08f1b0f5b5ed8a3dc0" category="inline-link-rx"></block> に示すように 'NetApp-acc' （またはカスタム名前の）名前空間内の TLS 秘密鍵と証明書の場合<block ref="749b9942574f6d94028c602d678053d4" category="inline-link-rx"></block>。</block>
   <block id="17aaf3b5b4a5c0e670d8632344228dc1" category="list-text">非推奨または新しいスキーマのいずれかのv1beta1'（Kubernetesバージョン1.22で非推奨）またはv1'リソースタイプを使用して'NetApp-acc'（またはカスタムネームド）ネームスペースに入力リソースを導入します</block>
@@ -684,20 +681,17 @@
   <block id="15dd8f83e9a999edc6eae56c5aec726e" category="paragraph">このページでは、 Astra Control Center の導入に必要な手順の概要を説明します。各ステップ内のリンクから、詳細が記載されたページに移動できます。</block>
   <block id="b777e6ba4555d404b00c2436d03ae649" category="inline-link-macro">ライセンス情報</block>
   <block id="dc9e569caa79effd430c7ea63ceff7be" category="paragraph">ぜひお試しください。Astra Control Center を試す場合は、 90 日間の評価ライセンスを使用できます。を参照してください <block ref="3d35b4f40b39e7d8200f90f9d624f8f4" category="inline-link-macro-rx"></block> を参照してください。</block>
-  <block id="4854d4c0301c6f34c76f1cb78057e09e" category="list-title">&lt;span class="image"&gt;&lt;img src=<block ref="0c3becc25d95e48b9ca863002a042824" category="inline-link-rx"></block> Alt="One"&gt;&lt;/span&gt; Kubernetes クラスタの要件を確認します</block>
   <block id="89110f39cddf501c149d691e3219c46f" category="list-text">Astra は、 Trident が設定された ONTAP ストレージバックエンドまたは Astra データストアストレージバックエンドを使用して、 Kubernetes クラスタと連携します。</block>
   <block id="0deb5023224ed4d71135e9bae6dff9d4" category="list-text">クラスタが正常な状態で稼働し、少なくとも 3 つのオンラインワーカーノードが必要です。</block>
   <block id="5f08198ddd920cae8e4af705793b2a56" category="list-text">クラスタで Kubernetes が実行されている必要があります。</block>
   <block id="e34728b4f7a3f87b9d4e4bc0568096e1" category="inline-link-macro">Astra Control Center の要件の詳細をご覧ください</block>
   <block id="dc36d12219c1097713b63def4e923028" category="paragraph"><block ref="cb100f378703845999b4907e7c8315fb" category="inline-link-macro-rx"></block>。</block>
-  <block id="9384595b10ef347b2da67882c7b37bd7" category="list-title">&lt;span class="image"&gt;&lt;img src=<block ref="c9bdd0fd7d7224adcf67691b15f15281" category="inline-link-rx"></block> Alt="2"&gt;&lt;/span&gt; Astra Control Center をダウンロードしてインストールします</block>
   <block id="afdff0e68ce5b4b3109d398df16872f7" category="inline-link">ネットアップサポートサイトの「 Astra Control Center Downloads 」ページ</block>
   <block id="b6511e86f155fe09cdd3bb8e739ea6b5" category="list-text">から Astra Control Center をダウンロードします<block ref="287561c5277beeaf3b39a65b237114c8" category="inline-link-rx"></block>。</block>
   <block id="276a11727deff1a1f5ebf349b23835fc" category="list-text">Astra Control Center をローカル環境にインストールします。</block>
   <block id="0e941f8350a728f8786d81c6ce155c8c" category="paragraph">必要に応じて、 Red Hat OperatorHub を使用して Astra Control Center をインストールします。</block>
   <block id="4cb444388821c2b32d8c80c962e7f1c0" category="inline-link-macro">Astra Control Center のインストールの詳細</block>
   <block id="869e88fdb2291fe31fc2aeb4bc0d3c4f" category="paragraph"><block ref="9eecb239704d706edd0e9065cdf42037" category="inline-link-macro-rx"></block>。</block>
-  <block id="80de081c75779cda8e2db1de0f292684" category="list-title">&lt;span class="image"&gt;&lt;img src=<block ref="ddd753dc2858fe3a5582f20b300a0541" category="inline-link-rx"></block> Alt="3"&gt;&lt;/span&gt; 初期設定タスクをいくつか実行します</block>
   <block id="f13e95a655fb97423bd52082209d8781" category="list-text">ライセンスを追加します</block>
   <block id="89a40ca78d4ff20ec6d54ba006768895" category="list-text">Kubernetes クラスタと Astra Control Center を追加すると、詳細が検出されます。</block>
   <block id="8035d5d39b2b48f6ec1a3133b688513c" category="inline-link">Astra データストア</block>
@@ -761,11 +755,9 @@
   <block id="b7d863d6846eaf1689410c02279f9ea6" category="section-title">ストレージバックエンドを追加します</block>
   <block id="07bb61072986729e824079c9eb528582" category="paragraph">ストレージバックエンドを追加して、 Astra Control がリソースを管理できるようにすることができます。管理対象クラスタにストレージバックエンドを導入するか、既存のストレージバックエンドを使用できます。</block>
   <block id="eb33ac2274505b5f55f336ecd9e9a2d2" category="paragraph">ストレージバックエンドとして Astra Control のストレージクラスタを管理することで、永続ボリューム（ PVS ）とストレージバックエンドの間のリンケージを取得できるだけでなく、追加のストレージ指標も取得できます。</block>
-  <block id="f8f5539f53262607b5f2bff0f2048a87" category="list-title">既存のAstraデータストアの導入に必要なもの</block>
   <block id="bbcdee2c81617430cf13df9d72e93bd4" category="list-text">Kubernetesアプリケーションクラスタと基盤となるコンピューティングクラスタを追加しておきます。</block>
   <block id="129d92c88545c014f5981e4bedd69fd4" category="inline-link-macro">クラスタを追加</block>
   <block id="dc03b544598d0dfcfdee0b1fce2a4730" category="admonition">Astra Data Store用のKubernetesアプリケーションクラスタを追加し、Astra Controlによって管理されると、クラスタは検出されたバックエンドのリストに「unmanaged」と表示されます。次に、 Astra データストアを含むコンピューティングクラスタを追加し、 Kubernetes アプリケーションクラスタの基盤を構築する必要があります。これは、 UI の * Backends * から実行できます。クラスタの [Actions] メニューを選択し、 [`Manage] を選択して、およびを選択します <block ref="8c30ee7267ee6c93cf0c195b661c2cd2" category="inline-link-macro-rx"></block>。「 unmanaged 」のクラスタ状態が Kubernetes クラスタの名前に変わったら、バックエンドの追加に進むことができます。</block>
-  <block id="5f8f1c10343756cee5ac9c33e098132e" category="list-title">新しいAstraデータストアの導入に必要なもの</block>
   <block id="e149dd131ab58984f98a85e4acdc17f3" category="inline-link-macro">導入するインストールバンドルのバージョンをアップロードしました</block>
   <block id="371c46463ca3b465cd0a0b198363c17f" category="list-text">これで完了です <block ref="ce9e25f6db2a9b698807ac8ac2ea2d16" category="inline-link-macro-rx"></block> Astra Controlからアクセス可能な場所への移動。</block>
   <block id="562a8ee2a8f15700012f29228a3198c7" category="list-text">導入に使用するKubernetesクラスタを追加しておきます。</block>
@@ -853,7 +845,6 @@
   <block id="a57d95e33fbdffe3b4bd71d5b0be74cd" category="list-text">「*ストレージクラス*」カテゴリを選択します。</block>
   <block id="b76660fac98aeb4fc46b77e989e6d8b0" category="list-text">デフォルトとして設定するストレージクラスの* Actions *メニューを選択します。</block>
   <block id="b4789b0ec041cd5e51f32c2f901a0951" category="list-text">「*デフォルトに設定*」を選択します。</block>
-  <block id="3f297ef15cde0668e93b35f2752fd4fd" category="section-title">次の手順</block>
   <block id="f5c61eabb41590a473fa2d0d115e63c1" category="paragraph">Astra Control Center にログインしてクラスタを追加したので、 Astra Control Center のアプリケーションデータ管理機能を使い始めることができます。</block>
   <block id="1b4fcfaacbd0ae3e24bc82f8d7a82211" category="inline-link-macro">ユーザを管理します</block>
   <block id="a2ef00bfa82a9800d86855a4a32ccef6" category="list-text"><block ref="a2ef00bfa82a9800d86855a4a32ccef6" category="inline-link-macro-rx"></block></block>
@@ -1007,7 +998,6 @@
   <block id="5f70f12e51733f39df8a8d8f2f0742da" category="section-title">Amazon Web Services に Astra Control Center を導入</block>
   <block id="b4504a5af800e56b2ac7bc310c520499" category="paragraph">Amazon Web Services （ AWS ）パブリッククラウドでホストされる自己管理型の Kubernetes クラスタに Astra Control Center を導入できます。</block>
   <block id="09cd08225c53bd8f4ccf737618d3fd24" category="paragraph">Astra Control Center の導入でサポートされるのは、自己管理 OpenShift Container Platform （ OCP ）クラスタのみです。</block>
-  <block id="4ad0f595b9dbd4c0336e372a8a1b2410" category="section-title">AWS に必要なもの</block>
   <block id="a5a36964a87d94d5ac0851af923c64fc" category="paragraph">AWS に Astra Control Center を導入する前に、次のものが必要です。</block>
   <block id="e7e1ddd48b888f0547b40d916ec5553d" category="inline-link-macro">Astra Control Center のライセンス要件</block>
   <block id="b488bebfd7a3a01cdcc54ea5856291cb" category="list-text">Astra Control Center ライセンス。を参照してください <block ref="fc4957629b78fc8c58b84966810cc78b" category="inline-link-macro-rx"></block>。</block>
@@ -1098,7 +1088,6 @@
   <block id="1cb58fa5a8f36029f128e85d88276810" category="paragraph">標準に従ってください <block ref="ef8e47848fa28ef11d8d85ade3f221ee" category="inline-link-macro-rx"></block>。</block>
   <block id="4d9093ca668edda8a4b7f1d5efe8d4bd" category="section-title">Microsoft Azure に Astra Control Center を導入</block>
   <block id="7f18f262f0f4112be8239133aa15cff4" category="paragraph">Microsoft Azure パブリッククラウドでホストされる自己管理型の Kubernetes クラスタに Astra Control Center を導入できます。</block>
-  <block id="24fdd2eaa17fe7802a949abb767e47ff" category="section-title">Azure に必要なもの</block>
   <block id="0868fde25a786c798cfe63227a2e632c" category="paragraph">Azure に Astra Control Center を導入する前に、次のものが必要です。</block>
   <block id="80495d67a6c40d68dcd4966f400a72b8" category="list-text">Red Hat OpenShift Container Platform （ OCP ） 4.8 の場合</block>
   <block id="067c001dbf7480cc26099ff0edfb8bda" category="list-text">バケットとコネクタの作成を可能にする権限を持つ Azure クレデンシャル</block>
@@ -1173,7 +1162,6 @@
   <block id="a9a11c7d000cd067981f61a0db579f74" category="summary">評価可能性チェックを実行して、 Astra Control Center にクラスタを追加する準備ができていることを確認する必要があります。</block>
   <block id="0ab8b406c4d5e3b8a7e5b402912b73fc" category="doc">クラスタを追加するための前提条件</block>
   <block id="84fccda9e18ab736ae1e33ef33ff8543" category="paragraph">クラスタを追加する前に、前提条件が満たされていることを確認する必要があります。また、資格チェックを実行して、アストラコントロールセンターにクラスタを追加する準備ができていることを確認する必要があります。</block>
-  <block id="32ce911ba9da44dfbcba79bbe607d8f0" category="section-title">クラスタを追加する前に必要な作業</block>
   <block id="46071ecf3cc6ea1619ad76021e951cc6" category="list-text">次のいずれかのタイプのクラスタ：</block>
   <block id="04836771e0f63e9503643a0ab68fa3c1" category="list-text">OpenShift 4.4.8、4.7、4.8、または4.9を実行しているクラスタ</block>
   <block id="3a2b605b2443215a0b7ae1bc41decc01" category="list-text">RKE1を使用してRancher 2.5.8、2.5.9、または2.6を実行しているクラスタ</block>
@@ -1832,15 +1820,11 @@
   <block id="9c4b5c958d6364ac3b17f0aa5a50e29d" category="paragraph">Astra Control Center を使用して、アプリケーションのバックアップ、クローン、スナップショット、および保護ポリシーを作成できます。アプリケーションをバックアップすることで、サービスや関連データを可能な限り利用できるようになります。災害時にバックアップからリストアすることで、アプリケーションと関連データを最小限の中断で完全にリカバリできます。バックアップ、クローン、 Snapshot を使用すると、ランサムウェアや偶発的なデータ損失、環境障害などの一般的な脅威からデータを保護できます。 <block ref="6b6e09024640eb9ec4bbda9f054e4ca3" category="inline-link-macro-rx"></block>。</block>
   <block id="fe2011653552de71bf2a04defdef5e3d" category="section-title">アプリケーション保護のワークフロー</block>
   <block id="9e3e52a15539d6b76c9af7b7c901f2dc" category="paragraph">次のワークフロー例を使用して、アプリケーションの保護を開始できます。</block>
-  <block id="a04c6aa912ab1752fccd834c4a0468b9" category="section-title">すべてのアプリケーションをバックアップ</block>
   <block id="cdb972c8ec0f0d2d064eee29da832b09" category="inline-link-macro">すべてのアプリケーションの手動バックアップを作成する</block>
   <block id="bb9745866a03e99751c67559a4b5bbfc" category="paragraph">アプリケーションをすぐに保護するには、次の手順を実行します。 <block ref="153c1de46633dd7b9ee4197b0f57d4e6" category="inline-link-macro-rx"></block>。</block>
-  <block id="fc728311492264f387b6d56bf7f401d9" category="section-title">各アプリケーションの保護ポリシーを設定します</block>
   <block id="67d8aac0ef877e89b323dda77c01cdc7" category="inline-link-macro">各アプリケーションの保護ポリシーを設定します</block>
   <block id="a6f3f1cac5047bfc8c8a549d7555afb4" category="paragraph">将来のバックアップとスナップショットを自動化するには、 <block ref="be33481d5db8c6459d2a9f9986e47ba8" category="inline-link-macro-rx"></block>。たとえば、週単位のバックアップと日単位の Snapshot をそれぞれ 1 カ月ずつ保持して開始できます。手動バックアップやスナップショットよりも、保護ポリシーを使用してバックアップとスナップショットを自動化することを強く推奨します。</block>
-  <block id="68db57ac71c439bd714299714a3d5cd5" category="section-title">オプション：保護ポリシーを調整します</block>
   <block id="2afcb2016ee556b04a072d6535bbab55" category="paragraph">アプリとその使用パターンが変化したら、必要に応じて保護ポリシーを調整して、最適な保護を実現します。</block>
-  <block id="ae923994b95458260e1a5b8c8c593bf1" category="section-title">災害が発生した場合は、アプリケーションをリストアします</block>
   <block id="7ce9ebbb5de6892ca270cea878bd99d1" category="inline-link-macro">最新のバックアップをリストアしています</block>
   <block id="dd27127bd92a34c602fa40bc2a1cdd3e" category="paragraph">データ損失が発生した場合は、を使用してリカバリできます <block ref="550aec8aa1d184571b143fbb368e4c54" category="inline-link-macro-rx"></block> まず、各アプリケーションについて説明します。その後、最新の Snapshot をリストアできます（使用可能な場合）。</block>
   <block id="0d67cfbbc2ee350c7d7ba6b5512b268e" category="summary">カスタムアプリケーションを作成すると、 Kubernetes クラスタの要素を 1 つのアプリケーションにグループ化できます。</block>
@@ -2080,14 +2064,12 @@
   <block id="a11ca2c2dd5144bf630dd5eb29b7cc67" category="list-text">パスワードの要件に準拠するパスワードを入力します。</block>
   <block id="57d4c802b66507e7e8b66d11f3a59a6f" category="list-text">確認のためパスワードをもう一度入力します。</block>
   <block id="45e3b3a50e0542121cdf2766502b7b56" category="list-text">「 * パスワードの変更 * 」を選択します。</block>
-  <block id="90f1c6fc655d106b5040673f4fce5f99" category="section-title">別のユーザーのパスワードをリセットします</block>
   <block id="777944860c5bbcdb1b4a4a0a593efb52" category="paragraph">アカウントに Admin ロールまたは Owner ロールの権限がある場合は、自分だけでなく他のユーザアカウントのパスワードもリセットできます。パスワードをリセットする場合は、ログイン時にユーザが変更しなければならない一時パスワードを割り当てます。</block>
   <block id="db30d3c2fee806f0319b663d27edf75c" category="list-text">[* アクション * （ * Actions * ） ] ドロップダウンリストを選択します。</block>
   <block id="df429da64d721747277606b598df29c4" category="list-text">「 * パスワードのリセット * 」を選択します。</block>
   <block id="67873c21262ba112b2e21148d43428f5" category="list-text">パスワードの要件に適合する一時パスワードを入力します。</block>
   <block id="7ba107a1d1f1a8008563386e4edebd3d" category="admonition">次回ユーザがログインするときに、パスワードの変更を求めるプロンプトが表示されます。</block>
   <block id="3930015dcc2810869591e35a2b5d714b" category="list-text">「 * パスワードのリセット * 」を選択します。</block>
-  <block id="a3f6d57c07e3d951867e570c6f3e5028" category="section-title">ユーザーの役割を変更します</block>
   <block id="24c0d48852d7cd070e2d6f992f4c74ab" category="paragraph">Owner ロールのユーザはすべてのユーザのロールを変更できますが、 Admin ロールのユーザは Admin 、 Member 、 Viewer のロールを持つユーザのロールを変更できます。</block>
   <block id="697f40aaae8b73ccaa173cd46b34fbd2" category="list-text">新しいロールを選択します。</block>
   <block id="47666ee116070193fb46cfa946f72486" category="list-text">ロールに制約を適用するには、 * 制約へのロールの制限 * チェックボックスを有効にして、リストから制約を選択します。</block>
@@ -2262,4 +2244,30 @@
   <block id="d1736d27c7efe09a7fdb5f5e3b18e8dc" category="paragraph">詳細については、を参照してください <block ref="f6d2e41142da7ccda158b71b34630966" category="inline-link-macro-rx"></block>。</block>
   <block id="7710790456945bed9a23fff9f934b8fd" category="paragraph">Astra Control Centerを有効にするには、フルアプリケーションデータ管理機能を有効にするためのライセンスが必要です。Astra Control Center をライセンスなしで導入すると、システム機能が制限されていることを示すバナーが Web UI に表示されます。</block>
   <block id="558e41f71155360e3f8ee151e27ea06f" category="paragraph">詳細については、を参照してください <block ref="ad125f0a3036e9b5f57b3a7077f489d9" category="inline-link-macro-rx"></block>。</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="01e12de62fa77fda2815719aed8ff892" category="section-title">次のステップ</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">必要なもの</block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1つ</block>
+  <block id="13a0d74de4f994f2861da351c22e5549" category="list-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Kubernetes クラスタの要件を確認</block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2 つ</block>
+  <block id="6e6d8bfff1b16149f8c62cfee0d2f62e" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Astra Control Centerをダウンロードしてインストールします</block>
+  <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">3つ</block>
+  <block id="ba9e9d1eb144bbf0eb66ffe3fb01e03a" category="list-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> いくつかの初期セットアップ作業を完了します</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">4.</block>
+  <block id="9824425bd5418e5e140ee6b8561b8914" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Astra Control Center を使用</block>
+  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">5 つ</block>
+  <block id="4e661ed0899ae91f577701320636fabf" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> このクイックスタートから続行します</block>
+  <block id="190b1d4301402be73ef9a56adefaf47b" category="section-title">クラスタを追加する前に必要な作業</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="section-title">次の手順</block>
+  <block id="9ecb27bf50e09cec4cda2e18d84ea4da" category="list-title">既存のAstraデータストアの導入に必要なもの</block>
+  <block id="75098be5cdce8831c807233c237587a4" category="list-title">新しいAstraデータストアの導入に必要なもの</block>
+  <block id="9905787058ed1f891f5110340336c6f4" category="section-title">AWSに必要なもの</block>
+  <block id="e4f3253ab12e0c60faa03ce6ef1c9784" category="section-title">Azureに必要なもの</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">作業を開始する前に</block>
+  <block id="6d2d6dcdeb7eba42ceceeb112f05b859" category="section-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> すべてのアプリケーションをバックアップ</block>
+  <block id="596a8ca466f62d03c2dfc376a65cac71" category="section-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 各アプリケーションの保護ポリシーを設定します</block>
+  <block id="286778446d447b5a9df4054a3b3dd6f3" category="section-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> オプション：保護ポリシーを調整します</block>
+  <block id="50b2dc093d74b71cb482308eb930fb02" category="section-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 災害が発生した場合は、アプリケーションをリストアします</block>
+  <block id="53c5fac0ba78b08ca3f0a270b746c5d2" category="section-title">別のユーザのパスワードをリセットします</block>
+  <block id="edb74efc05972c268b6cccf83996ac3e" category="section-title">ユーザのロールを変更します</block>
 </blocks>

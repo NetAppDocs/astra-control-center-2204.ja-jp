@@ -257,6 +257,6 @@ Astra Control Center は、最新バージョンの Firefox 、 Safari 、 Chrom
 
 
 
-== 次の手順
+== 次のステップ
 
 を表示します link:quick-start.html["クイックスタート"] 概要（ Overview ）：
