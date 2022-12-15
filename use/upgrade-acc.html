@@ -1452,7 +1452,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-22 23:48:09 +0000">11/22/2022</time>
+    <time datetime="2022-12-14 18:24:16 +0000">12/14/2022</time>
     
   
 
@@ -1501,33 +1501,34 @@
 </ul>
 </div>
 <div class="paragraph">
+<div class="title">このタスクについて</div>
 <p>Astra Control Center のアップグレードプロセスでは、次の手順を実行できます。</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>the Astra Control Center bundle</p>
+<p><a href="#astra-control-center-バンドルをダウンロードします">Astra Control Center バンドルをダウンロードします</a></p>
 </li>
 <li>
-<p>the bundle and change directory</p>
+<p><a href="#バンドルを開梱し、ディレクトリを変更します">[バンドルを開梱し、ディレクトリを変更します]</a></p>
 </li>
 <li>
-<p>the images to your local registry</p>
+<p><a href="#イメージをローカルレジストリに追加します">イメージをローカルレジストリに追加します</a></p>
 </li>
 <li>
-<p>the updated Astra Control Center operator</p>
+<p><a href="#更新された-astra-control-center-オペレータをインストールします">更新された Astra Control Center オペレータをインストールします</a></p>
 </li>
 <li>
-<p>Astra Control Center</p>
+<p><a href="#astra-control-center-をアップグレードします">Astra Control Center をアップグレードします</a></p>
 </li>
 <li>
-<p>third-party services (Optional)</p>
+<p><a href="#サードパーティサービスのアップグレード（オプション）">[サードパーティサービスのアップグレード（オプション）]</a></p>
 </li>
 <li>
-<p>system status</p>
+<p><a href="#システムステータスを確認します">システムステータスを確認します</a></p>
 </li>
 <li>
-<p>up ingress for load balancing</p>
+<p><a href="#ロードバランシング用の入力を設定します">ロードバランシング用の入力を設定します</a></p>
 </li>
 </ul>
 </div>
@@ -1697,10 +1698,10 @@ done</pre>
 </div>
 </li>
 <li>
-<p>「 kube-rbac プロキシ」イメージの「 [Your_registry_path] 」を、でイメージをプッシュしたレジストリパスに変更します ,前の手順。</p>
+<p>「 kube-rbac プロキシ」イメージの「 [Your_registry_path] 」を、でイメージをプッシュしたレジストリパスに変更します <a href="#substep_image_local_registry_push">前の手順</a>。</p>
 </li>
 <li>
-<p>「 acc-operator-controller-manager 」イメージの「 [Your_registry_path] 」を、でイメージをプッシュしたレジストリパスに変更します ,前の手順。</p>
+<p>「 acc-operator-controller-manager 」イメージの「 [Your_registry_path] 」を、でイメージをプッシュしたレジストリパスに変更します <a href="#substep_image_local_registry_push">前の手順</a>。</p>
 </li>
 <li>
 <p>「 env 」セクションに次の値を追加します。</p>
@@ -1810,7 +1811,7 @@ deployment.apps/acc-operator-controller-manager configured</pre>
 <img src="/us-en/astra-control-center-2204/images/note.svg" alt="注記">
 </td>
 <td class="content">
-レジストリパスは、のイメージをプッシュしたレジストリパスと一致する必要があります ,前の手順。
+レジストリパスは、のイメージをプッシュしたレジストリパスと一致する必要があります <a href="#substep_image_local_registry_push">前の手順</a>。
 </td>
 </tr>
 </table>
@@ -2052,7 +2053,7 @@ deployment.apps/acc-operator-controller-manager configured</pre>
 <div class="title">Nginx Ingress Controller の手順</div>
 <ol class="arabic">
 <li>
-<p>既存のシークレット「 secure-testing-cert 」を使用するか、タイプのシークレットを作成します <a href="http://kubernetes.io/tls">"「 sKubernetes .io/tls 」と入力します"</a> に示すように 'NetApp-acc' （またはカスタム名前の）名前空間内の TLS 秘密鍵と証明書の場合 <a href="https://kubernetes.io/docs/concepts/configuration/secret/#tls-secrets">"TLS シークレット"</a>。</p>
+<p>既存のシークレット「 secure-testing-cert 」を使用するか、タイプのシークレットを作成します <a href="http://kubernetes.io/tls">"8a637503539b25b68130b6e8003579d9"</a> に示すように 'NetApp-acc' （またはカスタム名前の）名前空間内の TLS 秘密鍵と証明書の場合 <a href="https://kubernetes.io/docs/concepts/configuration/secret/#tls-secrets">"TLS シークレット"</a>。</p>
 </li>
 <li>
 <p>非推奨または新しいスキーマのいずれかの入力リソースを NetApp-acc` （またはカスタム名前付き）ネームスペースに配置します。</p>
