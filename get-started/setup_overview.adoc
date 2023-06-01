@@ -24,7 +24,7 @@ Astra Control Center は、 ONTAP と Astra データストアをストレージ
 
 == Astra Control Center のライセンスを追加します
 
-UI またはを使用して新しいライセンスを追加できます https://docs.netapp.com/us-en/astra-automation/index.html["API"^] Astra Control Center の全機能を利用できます。ライセンスがないと、 Astra Control Center の使用は、ユーザの管理と新しいクラスタの追加に限定されます。
+UI またはを使用して新しいライセンスを追加できます https://docs.netapp.com/us-en/astra-automation-2204/index.html["API"^] Astra Control Center の全機能を利用できます。ライセンスがないと、 Astra Control Center の使用は、ユーザの管理と新しいクラスタの追加に限定されます。
 
 ライセンスの計算方法の詳細については、を参照してください link:../concepts/licensing.html["ライセンス"]。
 
@@ -348,6 +348,6 @@ Astra Control Center にログインしてクラスタを追加したので、 A
 [discrete]
 == 詳細については、こちらをご覧ください
 
-* https://docs.netapp.com/us-en/astra-automation/index.html["Astra Control API を使用"^]
+* https://docs.netapp.com/us-en/astra-automation-2204/index.html["Astra Control API を使用"^]
 * link:../release-notes/known-issues.html["既知の問題"]
 

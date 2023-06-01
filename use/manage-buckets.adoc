@@ -33,7 +33,7 @@ NOTE: Astra Control Center は Amazon S3 を汎用 S3 バケットプロバイ�
 * Removed ：バケットには現在アクセスできません。
 
 
-Astra Control API を使用してバケットを管理する方法については、を参照してください link:https://docs.netapp.com/us-en/astra-automation/["Astra の自動化と API に関する情報"^]。
+Astra Control API を使用してバケットを管理する方法については、を参照してください link:https://docs.netapp.com/us-en/astra-automation-2204/["Astra の自動化と API に関する情報"^]。
 
 バケットの管理に関連して次のタスクを実行できます。
 
@@ -97,7 +97,7 @@ TIP: Astra Control に追加する最初のクレデンシャルセットは、 
 
 NOTE: アクティブなバケットクレデンシャルを削除する場合は、を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Astra/Deleting_active_S3_bucket_credentials_leads_to_spurious_500_errors_reported_in_the_UI["バケットのクレデンシャル削除のトラブルシューティング"]。
 
-Astra Control APIを使用してS3クレデンシャルを削除する方法については、を参照してください link:https://docs.netapp.com/us-en/astra-automation/["Astra の自動化と API に関する情報"^]。
+Astra Control APIを使用してS3クレデンシャルを削除する方法については、を参照してください link:https://docs.netapp.com/us-en/astra-automation-2204/["Astra の自動化と API に関する情報"^]。
 
 
 
@@ -130,5 +130,5 @@ NOTE: Astra Control を使用すると、最初にバケットを使用してバ
 
 == 詳細については、こちらをご覧ください
 
-* https://docs.netapp.com/us-en/astra-automation/index.html["Astra Control API を使用"^]
+* https://docs.netapp.com/us-en/astra-automation-2204/index.html["Astra Control API を使用"^]
 

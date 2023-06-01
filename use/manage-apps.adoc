@@ -80,7 +80,7 @@ NOTE: Helm 2 でインストールされたアプリケーションはサポー�
 
 TIP: Astra Control 自体は標準のアプリケーションではなく、「システムアプリケーション」です。 Astra Control 自体は管理しないでください。Astra Control 自体は、管理用にデフォルトでは表示されません。システムアプリを表示するには、「システムアプリを表示」フィルタを使用します。
 
-Astra Control API を使用してアプリケーションを管理する方法については、を参照してください link:https://docs.netapp.com/us-en/astra-automation/["Astra の自動化と API に関する情報"^]。
+Astra Control API を使用してアプリケーションを管理する方法については、を参照してください link:https://docs.netapp.com/us-en/astra-automation-2204/["Astra の自動化と API に関する情報"^]。
 
 
 NOTE: データ保護処理（クローン、バックアップ、リストア）が完了して永続ボリュームのサイズを変更したあと、新しいボリュームのサイズが UI に表示されるまでに最大 20 分かかります。データ保護処理にかかる時間は数分です。また、ストレージバックエンドの管理ソフトウェアを使用してボリュームサイズの変更を確認できます。
@@ -211,5 +211,5 @@ TIP: Astra Control 自体は標準のアプリケーションではなく、「�
 
 == 詳細については、こちらをご覧ください
 
-* https://docs.netapp.com/us-en/astra-automation/index.html["Astra Control API を使用"^]
+* https://docs.netapp.com/us-en/astra-automation-2204/index.html["Astra Control API を使用"^]
 

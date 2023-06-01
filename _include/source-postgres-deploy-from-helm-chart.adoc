@@ -6,8 +6,7 @@
 
 Postgres は Astra 向けの検証済みアプリケーションです。
 
-* https://docs.netapp.com/us-en/astra/learn/validated-vs-standard.html["Astra Control Service の検証済みアプリケーションと標準アプリケーションの違いをご確認ください"^]。
-* https://docs.netapp.com/us-en/astra-control-center/concepts/validated-vs-standard.html["Astra Control Center の検証済みアプリケーションと標準アプリケーションの違いをご確認ください"^]。
+* https://docs.netapp.com/us-en/astra-control-center-2204/concepts/validated-vs-standard.html#validated-apps["Astra Controlの検証済みアプリケーションと標準アプリケーションの違いをご確認ください"^]。
 
 
 以下の手順は、 Astra Control Service と Astra Control Center の両方に適用されます。

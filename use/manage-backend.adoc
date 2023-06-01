@@ -13,7 +13,7 @@ summary: オンプレミスの Kubernetes アプリケーション用のスト�
 
 ストレージバックエンドとして Astra Control のストレージクラスタを管理することで、永続ボリューム（ PVS ）とストレージバックエンドの間のリンケージを取得できるだけでなく、追加のストレージ指標も取得できます。ストレージ容量と健全性の詳細を監視できます。 Astra Control Center が Cloud Insights に接続されている場合のパフォーマンスも監視できます。
 
-Astra Control API を使用してストレージバックエンドを管理する方法については、を参照してください link:https://docs.netapp.com/us-en/astra-automation/["Astra の自動化と API に関する情報"^]。
+Astra Control API を使用してストレージバックエンドを管理する方法については、を参照してください link:https://docs.netapp.com/us-en/astra-automation-2204/["Astra の自動化と API に関する情報"^]。
 
 ストレージバックエンドの管理に関連して、次のタスクを実行できます。
 
@@ -215,5 +215,5 @@ Astra データストアで導入時に設定した IP アドレスを使用で�
 
 == 詳細については、こちらをご覧ください
 
-* https://docs.netapp.com/us-en/astra-automation/index.html["Astra Control API を使用"^]
+* https://docs.netapp.com/us-en/astra-automation-2204/index.html["Astra Control API を使用"^]
 

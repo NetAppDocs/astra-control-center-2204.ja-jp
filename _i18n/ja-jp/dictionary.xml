@@ -38,10 +38,6 @@
   <block id="570fa99ce4fbf8deb198b97a6931d63a" category="list-text">Cloud Volumes ONTAP ストレージバックエンド</block>
   <block id="4d9496325ef678735e8ac8b99b7a562b" category="section-title">サポートされているアプリケーション</block>
   <block id="9ceaa15e10dc0e56e79bbb4822552022" category="paragraph">ネットアップでは、 Snapshot とバックアップの安全性と一貫性を確保するために、いくつかのアプリケーションの検証を行っています。</block>
-  <block id="be46076931cd53387cf526748531fc6f" category="inline-link">Astra Control Service の検証済みアプリケーションと標準アプリケーションの違いをご確認ください</block>
-  <block id="ea62af9d3d4954730fa2c07009e49c66" category="list-text"><block ref="d674c8ed82f2facf048e5aa68e13df70" category="inline-link-rx"></block>。</block>
-  <block id="823eb2faefa80af2ef88a171cfc0a501" category="inline-link">Astra Control Center の検証済みアプリケーションと標準アプリケーションの違いをご確認ください</block>
-  <block id="75e27f7256629bea1f115d1a2e35ff6a" category="list-text"><block ref="9d3644841f7a0a31e08f219b3140c67c" category="inline-link-rx"></block>。</block>
   <block id="3cf57593346f365ce163d769c70a8cab" category="paragraph">Astra Control で使用するアプリケーションの種類に関係なく、必ず自分でバックアップとリストアのワークフローをテストして、ディザスタリカバリの要件を満たすことを確認してください。</block>
   <block id="5f4b9e6660ba4e73dc9c6aa214e60cde" category="section-title">Astra Control Service の仕組み</block>
   <block id="972dbc054c14df6a8a668ad2c71b9afa" category="paragraph">Astra Control Service は、常時稼働し、最新の機能で更新される、ネットアップが管理するクラウドサービスです。複数のコンポーネントを利用して、アプリケーションデータのライフサイクル管理を実現します。</block>
@@ -97,7 +93,6 @@
   <block id="14d9b10c6196045941347a9e85704b50" category="inline-link">Astra Trident のドキュメント</block>
   <block id="4a2ab62188738135163aaaaeab1d6cfe" category="list-text"><block ref="4a2ab62188738135163aaaaeab1d6cfe" category="inline-link-rx"></block></block>
   <block id="d418042930eb178009f4c27360b349f6" category="inline-link">Astra Control API を使用</block>
-  <block id="35e127abdc4e59a01dd3fd4f63603bf1" category="list-text"><block ref="35e127abdc4e59a01dd3fd4f63603bf1" category="inline-link-rx"></block></block>
   <block id="5858ee4031acd7b896faa2d3d2c1a299" category="inline-link">Cloud Insights のドキュメント</block>
   <block id="2b93b48daf034e4100d00b85950e109d" category="list-text"><block ref="2b93b48daf034e4100d00b85950e109d" category="inline-link-rx"></block></block>
   <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="inline-link">ONTAP のドキュメント</block>
@@ -715,7 +710,6 @@
   <block id="8378fd4759f24f14cebfb73e947ac1de" category="list-text"><block ref="63668134c65384a6b95d5dee695d38d8" category="inline-xref-macro-rx"></block></block>
   <block id="ddea44f796e2d507e657985d19f15829" category="section-title">Astra Control Center のライセンスを追加します</block>
   <block id="db974238714ca8de634a7ce1d083a14f" category="inline-link">API</block>
-  <block id="1dce80120ee39f4aab113549ab33259d" category="paragraph">UI またはを使用して新しいライセンスを追加できます<block ref="3f4eec2c2c841509295f8beef0b157bb" category="inline-link-rx"></block> Astra Control Center の全機能を利用できます。ライセンスがないと、 Astra Control Center の使用は、ユーザの管理と新しいクラスタの追加に限定されます。</block>
   <block id="5aa431ebb0b0805358c5d6b3a9b9745d" category="paragraph">ライセンスの計算方法の詳細については、を参照してください <block ref="5d4863a02d05fc8628043f5d98bb32ab" category="inline-link-macro-rx"></block>。</block>
   <block id="86573025ef3f7119f73649ab37335d5f" category="admonition">既存の評価版またはフルライセンスを更新するには、を参照してください <block ref="c985292efffba104a103f0714c4407ab" category="inline-link-macro-rx"></block>。</block>
   <block id="02a305f4c96b27ccae0ed63692081099" category="paragraph">Astra Control Center ライセンスは、 Kubernetes CPU ユニットを使用して CPU リソースを測定します。ライセンスには、管理対象のすべての Kubernetes クラスタのワーカーノードに割り当てられた CPU リソースが含まれている必要があります。ライセンスを追加する前に、からライセンスファイル（ NLF ）を取得する必要があります <block ref="206c33a2dba20dd0d5bd753457534e53" category="inline-link-macro-rx"></block>。</block>
@@ -884,7 +878,6 @@
   <block id="4d40a8e178faea46fe31329801bc6573" category="list-text">* イメージレジストリ * ： Astra Control Center ビルドイメージをプッシュできる、既存のプライベート Docker イメージレジストリが必要です。イメージをアップロードするイメージレジストリの URL を指定する必要があります。</block>
   <block id="df819717a2baf5b48925d2b4cdaf4745" category="list-text">* Astra Trident / ONTAP 構成 * ： Astra Control Center では、ストレージクラスを作成してデフォルトのストレージクラスとして設定する必要があります。Astra Control Center は、 Astra Trident が提供する次の ONTAP ドライバをサポートしています。</block>
   <block id="8321592ce24c8a122ecf26a63cfca407" category="list-text">ONTAP - NAS</block>
-  <block id="844e84da8e822b4a33c4d8188da97937" category="list-text">ONTAP-NAS-flexgroup</block>
   <block id="73a3350a1b91aeb6e2836fdf5975672c" category="list-text">ONTAP - SAN</block>
   <block id="3016c12c1db45f14c80c9c1731b9c26a" category="list-text">ONTAP - SAN - 経済性</block>
   <block id="a194c96c412e6851d927b9d0e77bba07" category="paragraph">OpenShift 環境でのアプリケーションのクローニングでは、 Astra Control Center が OpenShift でボリュームをマウントし、ファイルの所有権を変更できるようにする必要があります。そのため、これらの処理を許可するには、 ONTAP ボリュームのエクスポートポリシーを設定する必要があります。次のコマンドを使用して実行できます。</block>
@@ -1055,7 +1048,6 @@
   <block id="e874bd0f330d9513016dc844dfd62e6f" category="paragraph">AWS のドキュメントに従って次の手順を実行します。を参照してください<block ref="b5a7979c22035fe192b9eb8d0cab1e4a" category="inline-link-rx"></block>。</block>
   <block id="9c7a256a23d947f541662b1e88bac33d" category="list-text">AWS仮想ネットワークを作成します。</block>
   <block id="92d9212a67ec9da982a091cf92cb4347" category="list-text">EC2 コンピューティングインスタンスを確認します。AWS ではベアメタルサーバまたは VM を使用できます。</block>
-  <block id="b881f78be517f5315cfb2d556f3448f7" category="list-text">インスタンスタイプが、マスターノードとワーカーノードの Astra の最小リソース要件に一致していない場合は、 Astra の要件に合わせて AWS でインスタンスタイプを変更します。を参照してください <block ref="32be9c8362ea42075ea0b5d43bb3b5d0" category="inline-link-macro-rx"></block>。</block>
   <block id="b109e192f966bb3bb3e8cd30e1a59bfa" category="list-text">バックアップを格納する AWS S3 バケットを少なくとも 1 つ作成します。</block>
   <block id="e5c5351f3ea6206a7f110205b4155acc" category="list-text">すべての ACC イメージをホストする AWS Elastic Container Registry （ ECR ）を作成します。</block>
   <block id="9d58e473a9f64a9efe76c63ca0a30602" category="admonition">ECRを作成しないと、Astra Control Centerは、AWSバックエンドを持つCloud Volumes ONTAP を含むクラスタからモニタリングデータにアクセスできません。問題 は、 Astra Control Center を使用して検出および管理しようとしたクラスタに AWS ECR アクセスがない場合に発生します。</block>
@@ -1107,11 +1099,7 @@
   <block id="d1fc12b83dd5d027e5bcadcf287a16af" category="list-text"><block ref="b5494b94dbff287f68cd90ac03222f44" category="inline-xref-macro-rx"></block>。</block>
   <block id="2cce86879561a32f83b0b211ad079596" category="section-title">Azure に Red Hat OpenShift クラスタをインストールします</block>
   <block id="ac7776656696332f732a35f1a0662432" category="paragraph">まず、 Azure に Red Hat OpenShift クラスタをインストールします。</block>
-  <block id="4a3ec74d604704b9803df28451c8fc6b" category="paragraph">インストール手順については、次を参照してください。</block>
   <block id="4f6685bd07b182993d024dcf856ff5ae" category="inline-link">Azure への OpenShift クラスタのインストール</block>
-  <block id="fef256305fde869fc9c1b90f96dbebe5" category="list-text"><block ref="6613cf818db4dcdf36b939920f432c05" category="inline-link-rx"></block>。</block>
-  <block id="eed9d4fe807c07d271c864a1240c1c3f" category="inline-link">Azure アカウントをインストールする</block>
-  <block id="03936dba93dbfb5fc2df3ced6ce0b025" category="list-text"><block ref="2950a8cca92e141f7cc27cfe82878caa" category="inline-link-rx"></block>。</block>
   <block id="9b227636b2d4cea11291793360089d9f" category="section-title">Azure リソースグループを作成する</block>
   <block id="b15c7c1cada48f735340ffa1ec2e4b6d" category="paragraph">Azure リソースグループを少なくとも 1 つ作成します。</block>
   <block id="f754cf28e9ca6bd457246cb85d6d5535" category="admonition">OpenShift では、独自のリソースグループを作成できます。さらに、 Azure リソースグループも定義する必要があります。OpenShift のドキュメントを参照してください。</block>
@@ -1242,7 +1230,6 @@
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">プライバシーポリシー</block>
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="e81b0f8fae224ca0c3d3258b75a989dd" category="section-title">Astra Control API ライセンス</block>
-  <block id="f7c79ca7f13fd9da78390d5a97db7042" category="paragraph"><block ref="f7c79ca7f13fd9da78390d5a97db7042" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">オープンソース</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
   <block id="108238230cdf60dd0887f944a8d13493" category="inline-link-macro">Astra Control Center 21.08 リリースの注意</block>
@@ -1306,7 +1293,6 @@
   <block id="42a0d288cadd6192424c03a28590c9fd" category="list-text">Pending ：バケットの検出がスケジュールされています。</block>
   <block id="fac51c0a7c720a76e584ea5b21dc752a" category="list-text">Available ：バケットは使用可能です。</block>
   <block id="7f5b082de7160fe4d88fcb73b137ef12" category="list-text">Removed ：バケットには現在アクセスできません。</block>
-  <block id="2670ea2abab7233a3fe9b29dabc0e86c" category="paragraph">Astra Control API を使用してバケットを管理する方法については、を参照してください <block ref="ef5b26cd6e9ab40377842cc20d2b4ebf" category="inline-link-macro-rx"></block>。</block>
   <block id="39ee41fd712c4d72dd841699443ac03f" category="paragraph">バケットの管理に関連して次のタスクを実行できます。</block>
   <block id="aaeab87cf32cd2289539c7af6e475ce1" category="list-text"><block ref="aaeab87cf32cd2289539c7af6e475ce1" category="inline-link-macro-rx"></block></block>
   <block id="7c5cb0e87ebe5449ca36f64ae91fde0a" category="list-text"><block ref="9626f8adb1f38ad7cdef194df83d0efd" category="inline-xref-macro-rx"></block></block>
@@ -1333,7 +1319,6 @@
   <block id="a31d0ea55a51bfbd5a603a8f5fa7a37a" category="admonition">Astra Control に追加する最初のクレデンシャルセットは、 Astra Control がバックアップバケットの認証にクレデンシャルを使用するため、常に使用されています。バケットがアクティブな状態で使用されている場合は、これらのクレデンシャルを削除しないでください。削除すると、バックアップが失敗してバックアップが使用できなくなります。</block>
   <block id="b2b8741126a8674edc86e6286a85c804" category="inline-link">バケットのクレデンシャル削除のトラブルシューティング</block>
   <block id="983be0b26fa308ee99003c55cac37fb5" category="admonition">アクティブなバケットクレデンシャルを削除する場合は、を参照してください<block ref="939cc867881057c221247142d6425e0a" category="inline-link-rx"></block>。</block>
-  <block id="576924ceb67cb5e87c15acdcb112c47d" category="paragraph">Astra Control APIを使用してS3クレデンシャルを削除する方法については、を参照してください <block ref="ef5b26cd6e9ab40377842cc20d2b4ebf" category="inline-link-macro-rx"></block>。</block>
   <block id="52eddccfd67295f46df3a2a0dcec5e44" category="section-title">バケットを削除する</block>
   <block id="f53ffd7307293ef8f5f91ade211805ee" category="paragraph">使用されなくなったバケットや正常でないバケットを削除することができます。これは、オブジェクトストアの設定をシンプルかつ最新の状態に保つために役立ちます。</block>
   <block id="65fafb6393f492dddd2b39c508a868b1" category="admonition">デフォルトバケットを削除することはできません。そのバケットを削除する場合は、最初に別のバケットをデフォルトとして選択します。</block>
@@ -1368,7 +1353,6 @@
   <block id="bb2f4bbf1bdeef5e734446fc84fd577d" category="paragraph">次の例では、最初の実行時にフックが失敗していますが、 2 回目の実行後に成功しています。</block>
   <block id="71bbec1f93d6a09922beb159603ed75d" category="summary">評価用ライセンスをフルライセンスに変換したり、既存の評価用ライセンスまたはフルライセンスを新しいライセンスで更新したりできます。</block>
   <block id="a4f53e5340ac3c6ab0e1234f9f27981c" category="inline-link">Astra Control API</block>
-  <block id="e210a2b491f987896effdfbf2ac044b4" category="paragraph">評価用ライセンスをフルライセンスに変換したり、既存の評価用ライセンスまたはフルライセンスを新しいライセンスで更新したりできます。フルライセンスがない場合は、ネットアップの営業担当者に連絡して、ライセンスとシリアル番号の全文を入手してください。Astra の UI またはを使用できます<block ref="c3bdc3d9b521474044010a53b984c85e" category="inline-link-rx"></block> 既存のライセンスを更新します。</block>
   <block id="54cfed46a9cc878d0635a8e52178247e" category="list-text">にログインします<block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block>。</block>
   <block id="d1ef0ad9838e2c5742436b6964bea64b" category="list-text">Astra Control Center のダウンロードページにアクセスし、シリアル番号を入力して、ネットアップライセンスファイル（ NLF ）をダウンロードする。</block>
   <block id="20e310cccf1da98d95bf519182b2f66b" category="list-text">[*Account*&gt;*License*] ページで、既存のライセンスのステータスドロップダウンメニューを選択し、 [*Replace*] を選択します。</block>
@@ -1437,7 +1421,6 @@
   <block id="e47de778abddd04a721cb643c8cd8b29" category="summary">オンプレミスの Kubernetes アプリケーション用のストレージを追加Astra Control は、 Trident 、 ONTAP 、関連ストレージクラスなど、導入済みのリソースを検出して使用します。</block>
   <block id="7caee76c2dc8935a37de1c05171523df" category="doc">ストレージバックエンドを管理します</block>
   <block id="bd71880512c6a2e27f18b857de29c734" category="paragraph">ストレージバックエンドとして Astra Control のストレージクラスタを管理することで、永続ボリューム（ PVS ）とストレージバックエンドの間のリンケージを取得できるだけでなく、追加のストレージ指標も取得できます。ストレージ容量と健全性の詳細を監視できます。 Astra Control Center が Cloud Insights に接続されている場合のパフォーマンスも監視できます。</block>
-  <block id="ac31b73c6d74a2d6181d75600f0582dd" category="paragraph">Astra Control API を使用してストレージバックエンドを管理する方法については、を参照してください <block ref="ef5b26cd6e9ab40377842cc20d2b4ebf" category="inline-link-macro-rx"></block>。</block>
   <block id="9824235ceedebf7a0b5acf6ba6325032" category="paragraph">ストレージバックエンドの管理に関連して、次のタスクを実行できます。</block>
   <block id="061d4f410083048df17ad35d55d433ae" category="list-text"><block ref="061d4f410083048df17ad35d55d433ae" category="inline-link-macro-rx"></block></block>
   <block id="db7f51c06e765b1617e0501c95e6f8a0" category="list-text"><block ref="4c3c2abb89be1a029febeaf2490e871f" category="inline-xref-macro-rx"></block></block>
@@ -1543,7 +1526,6 @@
   <block id="03c10d89e177cc21fc29e0d86e9ea17c" category="list-text"><block ref="5cebf7ba15478afb011ebb7df6c2d91d" category="inline-xref-macro-rx"></block></block>
   <block id="755a92e5dcd19bbdc22fad4b3ee5be2c" category="list-text"><block ref="ea3e466dc5081a246cf718060e6ceb5e" category="inline-xref-macro-rx"></block></block>
   <block id="c5900bcc52ea027b00ec8ac7a40b045c" category="admonition">Astra Control 自体は標準のアプリケーションではなく、「システムアプリケーション」です。 Astra Control 自体は管理しないでください。Astra Control 自体は、管理用にデフォルトでは表示されません。システムアプリを表示するには、「システムアプリを表示」フィルタを使用します。</block>
-  <block id="b04ceef112f40532368c375404526534" category="paragraph">Astra Control API を使用してアプリケーションを管理する方法については、を参照してください <block ref="ef5b26cd6e9ab40377842cc20d2b4ebf" category="inline-link-macro-rx"></block>。</block>
   <block id="4aa39cfd070d5b8290f8a579a5c11d36" category="admonition">データ保護処理（クローン、バックアップ、リストア）が完了して永続ボリュームのサイズを変更したあと、新しいボリュームのサイズが UI に表示されるまでに最大 20 分かかります。データ保護処理にかかる時間は数分です。また、ストレージバックエンドの管理ソフトウェアを使用してボリュームサイズの変更を確認できます。</block>
   <block id="88c0a67bdf6030605c2de05383b4784a" category="section-title">ネームスペースでアプリケーションを管理します</block>
   <block id="dc94bb32fadd21b60e89bfc8ec43d94e" category="paragraph">アプリページの * 検出された * セクションには、名前空間と Helm がインストールされたアプリ、またはそれらの名前空間内のカスタムラベル付きアプリが表示されます。各アプリケーションを個別に管理することも、ネームスペースレベルで管理することもできます。データ保護処理に必要な精度のレベルが重要になります。</block>
@@ -1604,7 +1586,6 @@
   <block id="2c1b2aa1361b2b30f079d2afc37936be" category="admonition">Astra Control 自体は標準のアプリケーションではなく、「システムアプリケーション」です。 Astra Control 自体は管理しないでください。Astra Control 自体は、管理用にデフォルトでは表示されません。</block>
   <block id="02c8c5fbeebdf293d83e1ec96ea30aff" category="summary">Astra では、スナップショットまたはバックアップからアプリケーション構成と永続的ストレージをリストアできます。オブジェクトストアから永続的ストレージのバックアップが転送されるため、既存のバックアップからのリストアが最も高速に完了します。</block>
   <block id="e07596cf624c6e8c354d1188f9bdb6bb" category="doc">アプリケーションのリストア</block>
-  <block id="bd48cb856a5ec10f9c3c2bf8d62fc86c" category="paragraph">Astra Control を使用すると、スナップショットまたはバックアップからアプリケーションをリストアできます。同じクラスタにアプリケーションをリストアする場合、既存の Snapshot からのリストアは高速です。Astra Control UI またはを使用できます<block ref="c3bdc3d9b521474044010a53b984c85e" category="inline-link-rx"></block> アプリを復元するには、</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="list-title">このタスクについて</block>
   <block id="f667e2a184f6b549b4a1c647af94d494" category="list-text">アプリケーションをリストアする前に、アプリケーションのスナップショットを作成するか、バックアップすることを強くお勧めします。リストアに失敗した場合に、Snapshotまたはバックアップからクローニングできます。</block>
   <block id="e502e50919efc0bce1d30fabf1522cff" category="list-text">Helm を使用してアプリケーションを展開する場合、 Astra Control Center には Helm バージョン 3 が必要です。Helm 3 （または Helm 2 から Helm 3 にアップグレード）を使用して展開されたアプリケーションの管理とクローニングが完全にサポートされています。Helm 2 で展開されたアプリケーションはサポートされていません。</block>
@@ -1625,7 +1606,6 @@
   <block id="04f6e2ed8a6f52177a2ee469e20d84ba" category="paragraph">Astra Control Center は、指定した情報に基づいてアプリケーションを復元します。アプリケーションをインプレースでリストアした場合、既存の永続ボリュームの内容が、リストアしたアプリケーションの永続ボリュームの内容に置き換えられます。</block>
   <block id="cc35f1f52bd3c3e89d57573e14a02129" category="admonition">データ保護処理（クローン、バックアップ、リストア）が完了して永続ボリュームのサイズが変更されたあと、Web UIに新しいボリュームサイズが表示されるまでに最大20分かかります。データ保護処理にかかる時間は数分です。また、ストレージバックエンドの管理ソフトウェアを使用してボリュームサイズの変更を確認できます。</block>
   <block id="5acfa2bc809db5956ea651edbf833ab3" category="summary">ロールに制約を追加してユーザロールを管理する方法について説明します。</block>
-  <block id="a570617b73a4a19e27f1777e4332cbb0" category="paragraph">ロールを管理するには、ネームスペースの制約を追加し、ユーザロールをその制約に制限します。これにより、組織内のリソースへのアクセスを制御できます。Astra Control UI またはを使用できます<block ref="c3bdc3d9b521474044010a53b984c85e" category="inline-link-rx"></block> をクリックしてください。</block>
   <block id="676588bdedb566aa975286a947887eb5" category="section-title">ロールに名前空間制約を追加します</block>
   <block id="54821860146968c37fff85867d70d345" category="paragraph">Admin または Owner ユーザは、ネームスペースの制約を追加できます。</block>
   <block id="d59a011be6ae515e4a203cd2844e878f" category="list-text">「アカウントの管理」ナビゲーション領域で、「 * アカウント * 」を選択します。</block>
@@ -1917,7 +1897,6 @@
   <block id="43d83712b0e0bc1d90bb068a6d2d995b" category="paragraph">Astra Control Center で管理するクラスタを追加すると、その場所、ワーカーノード、永続ボリューム、ストレージクラスなど、クラスタに関する詳細を表示できます。</block>
   <block id="e0d6be7dcacd9bf8c69bf3d81aa96e33" category="list-text">Astra Control Center UI で、 [* Clusters] を選択します。</block>
   <block id="97e3f2b867ad826bf01d83ab47d874c5" category="list-text">[* Clusters] ページで、詳細を表示するクラスタを選択します。</block>
-  <block id="683680341c1485a9254d81c06fc946e1" category="admonition">クラスタが「 re moved 」状態であり、ネットワーク接続が正常であると表示される場合（ Kubernetes API を使用してクラスタに外部からアクセスしようとすると成功します）、 Astra Control に指定した beckufig は無効になる可能性があります。クラスタでの証明書のローテーションまたは有効期限が原因の可能性があります。この問題を修正するには、を使用して、 Astra Control のクラスタに関連付けられたクレデンシャルを更新します <block ref="a2191a9273bc54ae2e00dd51b40d424f" category="inline-link-macro-rx"></block>。</block>
   <block id="2d3a33198a03ea06faef99430efd1075" category="list-text">[Overview （概要） ] 、 [* Storage （ * ストレージ） ] 、 [* Activity * （アクティビティ * ） ] タブの情報を表示して、必要な情報を検索します。</block>
   <block id="fd8001bbeb8d9f8b55b043d6db003c85" category="list-text">* 概要 * ：状態を含むワーカーノードの詳細。</block>
   <block id="1825841c7b132cb5df31c466db49d616" category="list-text">* ストレージ * ：ストレージクラスと状態を含む、コンピューティングに関連付けられた永続的ボリューム。</block>
@@ -2038,7 +2017,6 @@
   <block id="b6f24976c72b86ca057fbe3f5443262d" category="section-title">Fluentd 接続を無効にします</block>
   <block id="7be2d61fc9bee0ec05d653fa3deacddb" category="paragraph">Astra Control Center インスタンスへの Fluentd 接続を無効にできます。</block>
   <block id="299722bd05bd376cc7b0c795d68d2265" category="summary">ユーザーを Astra Control Center システムに追加し、システムにアクセスできなくなったユーザーを削除します。</block>
-  <block id="8cdabe1a0e235d2c6d413796a3d36a3e" category="paragraph">Astra Control UI を使用して、 Astra Control Center インストールのユーザーを招待、追加、削除、および編集できます。Astra Control UI またはを使用できます<block ref="c3bdc3d9b521474044010a53b984c85e" category="inline-link-rx"></block> ユーザを管理するには、を実行</block>
   <block id="44a72539ab388ef935cc928a8fb1ce85" category="section-title">ユーザーを招待します</block>
   <block id="a9108f9486f76c6e7a5bde63b536135b" category="paragraph">アカウント所有者と管理者は、 Astra Control Center に新しいユーザを招待できます。</block>
   <block id="47c10293a9aaa5003ceca0a063f11f87" category="list-text">[* ユーザーの招待 * ] を選択します。</block>
@@ -2083,7 +2061,6 @@
   <block id="201d245e3b93a26007d42f5f603f6230" category="paragraph">Astra Control Center は、アカウントからユーザーを削除します。</block>
   <block id="60487fcdacfcf0e2feb2363106047906" category="summary">自動保護ポリシーまたはアドホックベースを使用してスナップショットやバックアップを作成することで、アプリケーションを保護します。</block>
   <block id="c48341950d06dc5b2b657a869930da35" category="doc">Snapshot とバックアップでアプリケーションを保護</block>
-  <block id="0ea2d3938278fb80f86236d57c1fdd9f" category="paragraph">自動保護ポリシーまたはアドホックベースを使用してスナップショットやバックアップを作成することで、アプリケーションを保護します。Astra の UI またはを使用できます<block ref="c3bdc3d9b521474044010a53b984c85e" category="inline-link-rx"></block> アプリを保護します。</block>
   <block id="2b44ed9b51c4c625419cf0a113f71811" category="section-title">保護ポリシーを設定します</block>
   <block id="75e48fb59b8569e506bf04badc196e20" category="paragraph">保護ポリシーは、定義されたスケジュールでスナップショット、バックアップ、またはその両方を作成することでアプリケーションを保護します。Snapshot とバックアップを毎時、日次、週次、および月単位で作成し、保持するコピーの数を指定できます。たとえば、保護ポリシーでは、週単位のバックアップと日単位の Snapshot が作成され、 1 カ月間はバックアップと Snapshot が保持されます。スナップショットやバックアップを作成する頻度と、それらを保持する期間は、組織のニーズによって異なります。</block>
   <block id="dea95de7f2633f161384f311ab180946" category="list-text">[ * データ保護 * ] を選択します。</block>
@@ -2112,7 +2089,6 @@
   <block id="9c0219b22b1e6b867e58d26e2376d1b5" category="paragraph">Astra Control Center は、アプリケーションのバックアップを作成します。</block>
   <block id="d09c797cc7a85895ff954d5d0d885f2a" category="admonition">ネットワークに障害が発生している場合や、処理速度が異常に遅い場合は、バックアップ処理がタイムアウトする可能性があります。その結果、バックアップは失敗します。</block>
   <block id="3a9aa927e69295bb6a293e7a2b8931ec" category="inline-link">Astra Control API を使用</block>
-  <block id="3cab15ca9bc2b803bb697d2dffa9a8c7" category="admonition">実行中のバックアップを停止する方法はありません。バックアップを削除する必要がある場合は、完了するまで待ってから、の手順を実行してください <block ref="da28e1f6ad1e5135aab14ac0664600c6" category="inline-xref-macro-rx"></block>。失敗したバックアップを削除するには、<block ref="8c61a57582c89e51043cfde4b10d9da8" category="inline-link-rx"></block>。</block>
   <block id="77f724b0450d887ae90354dc86af187f" category="section-title">Snapshot とバックアップを表示します</block>
   <block id="89ce96bd0da29cf41a1d1e5a1e31750c" category="paragraph">アプリケーションのスナップショットとバックアップは、 [ データ保護（ Data Protection ） ] タブで表示できます。</block>
   <block id="ba422de2b441f28df52aa1523655128b" category="paragraph">デフォルトでは、 Snapshot が表示されます。</block>
@@ -2123,7 +2099,6 @@
   <block id="89344c40f120955a63d7739528fd4b73" category="list-text">削除を確認するために「 delete 」と入力し、「 * はい、 Snapshot を削除します * 」を選択します。</block>
   <block id="28b8ee1ecbde57df52fcc275c0be2768" category="paragraph">Astra Control Center がスナップショットを削除します。</block>
   <block id="2072fc95a1bd08ae58a002d5b61a84d0" category="paragraph">不要になったスケジュール済みまたはオンデマンドのバックアップを削除します。</block>
-  <block id="a30262d6afaf36a19a7561092a422291" category="admonition">実行中のバックアップを停止する方法はありません。バックアップを削除する必要がある場合は、完了するまで待ってから、以下の手順を実行してください。失敗したバックアップを削除するには、<block ref="8c61a57582c89e51043cfde4b10d9da8" category="inline-link-rx"></block>。</block>
   <block id="c629829cf1bc7915fff12e8f5be0438f" category="list-text">「 * Backups * 」を選択します。</block>
   <block id="abd2fd37e547a799b49566579281bc49" category="list-text">目的のバックアップの [ * アクション * ] 列の [ オプション ] メニューから、 [ * バックアップの削除 * ] を選択します。</block>
   <block id="6f1ab2323d6aef1a6946b680cc54ec7c" category="list-text">削除を確認するために「 delete 」と入力し、「 * はい、バックアップを削除 * 」を選択します。</block>
@@ -2131,7 +2106,6 @@
   <block id="73e5c8ce985735a0c92b24da1a48a7fb" category="summary">既存のアプリケーションをクローニングして、同じ Kubernetes クラスタまたは別のクラスタに重複するアプリケーションを作成する。Kubernetes クラスタ間でアプリケーションとストレージを移動する必要がある場合は、クローニングが役立ちます。たとえば、 CI CD パイプラインや Kubernetes ネームスペース間でワークロードを移動できます。</block>
   <block id="0adcbb2b9c783786f0ac0b7cfb133292" category="doc">アプリケーションのクローン作成と移行</block>
   <block id="65a891fb25b3f2147bc133e853c9c78f" category="paragraph">既存のアプリケーションをクローニングして、同じ Kubernetes クラスタまたは別のクラスタに重複するアプリケーションを作成する。Astra Control Center は、アプリケーションのクローンを作成するときに、アプリケーション構成と永続的ストレージのクローンを作成します。</block>
-  <block id="ac29876325ad99cfc9f7a5498ef0bbc8" category="paragraph">Kubernetes クラスタ間でアプリケーションとストレージを移動する必要がある場合は、クローニングが役立ちます。たとえば、 CI / CD パイプラインや Kubernetes ネームスペース間でワークロードを移動できます。Astra の UI またはを使用できます<block ref="c3bdc3d9b521474044010a53b984c85e" category="inline-link-rx"></block> アプリケーションのクローン作成と移行を実行します。</block>
   <block id="ab62a04e97130f45535e357bce3a6ea1" category="paragraph">アプリケーションを別のクラスタにクローニングするには、デフォルトのバケットが必要です。最初のバケットを追加した時点でデフォルトのバケットになります。</block>
   <block id="de630a4ac4f8e7e0a9e20d3f541a85b7" category="list-text">StorageClass が明示的に設定されたアプリケーションを展開し、そのアプリケーションをクローニングする必要がある場合、ターゲットクラスタには元の StorageClass が指定されている必要があります。明示的に StorageClass を設定したアプリケーションを、同じストレージクラスを使用しないクラスタにクローニングすると、失敗します。</block>
   <block id="b236785facde2b09aab0f1358b3003c7" category="list-text">オペレータが配置した Jenkins CI のインスタンスをクローニングする場合は、永続データを手動でリストアする必要があります。これは、アプリケーションの展開モデルの制限事項です。</block>
@@ -2189,7 +2163,6 @@
   <block id="ce8c3cae4f2c01197a36e6ffb040472a" category="paragraph">Astra Control には REST API が搭載されており、 Curl などのプログラミング言語やユーティリティを使用して Astra Control 機能に直接アクセスできます。また、 Ansible などの自動化テクノロジを使用して Astra Control 環境を管理することもできます。</block>
   <block id="5cae3a7a6ab7716dbf5d1465195ecc4e" category="paragraph">Kubernetes アプリケーションをセットアップおよび管理するには、 Astra UI または Astra Control API を使用できます。</block>
   <block id="27cf840321d17e56b1aa845077c2a75a" category="inline-link">Astra 自動ドキュメント</block>
-  <block id="3d92cf08e15d0e0583809eacb9f69a0d" category="paragraph">詳細については、を参照してください<block ref="6349a3dedd5f6852f01f9dde1b38a254" category="inline-link-rx"></block>。</block>
   <block id="93168a8084b3e838d2932c4734bd234e" category="sidebar">以前のバージョン</block>
   <block id="0798c457df65a765c2a3aace627c312b" category="sidebar">Astra Control Center の利用を開始しましょう</block>
   <block id="41babe56ec27c9b39ecab6c854265300" category="sidebar">Astra Control Center の詳細をご確認ください</block>
@@ -2270,4 +2243,27 @@
   <block id="50b2dc093d74b71cb482308eb930fb02" category="section-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 災害が発生した場合は、アプリケーションをリストアします</block>
   <block id="53c5fac0ba78b08ca3f0a270b746c5d2" category="section-title">別のユーザのパスワードをリセットします</block>
   <block id="edb74efc05972c268b6cccf83996ac3e" category="section-title">ユーザのロールを変更します</block>
+  <block id="d33bd54d3b543c56bac4865c41981a8c" category="list-text"><block ref="d33bd54d3b543c56bac4865c41981a8c" category="inline-link-rx"></block></block>
+  <block id="79fe5cf1763256cd6a680ec712c82fdb" category="paragraph">UI またはを使用して新しいライセンスを追加できます<block ref="034e15d059ec9a9549ce90bfb896e71f" category="inline-link-rx"></block> Astra Control Center の全機能を利用できます。ライセンスがないと、 Astra Control Center の使用は、ユーザの管理と新しいクラスタの追加に限定されます。</block>
+  <block id="1ba6670409b12d2ecffe5f765b22636d" category="list-text">インスタンスタイプが、マスターノードとワーカーノードの Astra の最小リソース要件に一致していない場合は、 Astra の要件に合わせて AWS でインスタンスタイプを変更します。  を参照してください <block ref="a41c664e3d2520e4c4deb907d0286272" category="inline-link-macro-rx"></block>。</block>
+  <block id="284a8b144f9341c750b469b574fb8c00" category="inline-link">AzureにOpenShiftクラスタをインストールしています</block>
+  <block id="026f21beafa7ab4dd2e0a19c7d485bb6" category="inline-link">Azureアカウントをインストールしています</block>
+  <block id="49ffba9fa4ce5bf749cec20def44c0b9" category="paragraph">インストール手順については、のRedHatのマニュアルを参照してください<block ref="2b5694f45e8e8a8a0bd04ce92001fd2c" category="inline-link-rx"></block> および<block ref="b57239f3f933c36abb901cdf3e168d8f" category="inline-link-rx"></block>。</block>
+  <block id="d7e8ec4ac03380f7360b24b84e02bc2c" category="paragraph"><block ref="d7e8ec4ac03380f7360b24b84e02bc2c" category="inline-link-rx"></block></block>
+  <block id="038aa329e12ca1821545cf4a1d938aed" category="inline-link">Astra Controlの検証済みアプリケーションと標準アプリケーションの違いをご確認ください</block>
+  <block id="d5a3fd1c4ff9b924b82909f1b645bee8" category="list-text"><block ref="a3e4ce46068122a9dbb346a32a7b154f" category="inline-link-rx"></block>。</block>
+  <block id="762ef43b4a11a511c62b8a4849953db5" category="paragraph">自動保護ポリシーまたはアドホックベースを使用してスナップショットやバックアップを作成することで、アプリケーションを保護します。Astra の UI またはを使用できます<block ref="414551f2d63a329d9ffea01809d18802" category="inline-link-rx"></block> アプリを保護します。</block>
+  <block id="f51de799c9cfab0438048b54a72c2933" category="admonition">実行中のバックアップを停止する方法はありません。バックアップを削除する必要がある場合は、完了するまで待ってから、の手順を実行してください <block ref="da28e1f6ad1e5135aab14ac0664600c6" category="inline-xref-macro-rx"></block>。失敗したバックアップを削除するには、<block ref="dd68bc92887523be75ee7ba01b4bcb4b" category="inline-link-rx"></block>。</block>
+  <block id="4f1044e2106e85477990284013da9865" category="admonition">実行中のバックアップを停止する方法はありません。バックアップを削除する必要がある場合は、完了するまで待ってから、以下の手順を実行してください。失敗したバックアップを削除するには、<block ref="dd68bc92887523be75ee7ba01b4bcb4b" category="inline-link-rx"></block>。</block>
+  <block id="e60110c1e9b4dfa4fed9f2f9abcc4183" category="admonition">クラスタの構成<block ref="b07286ebbb5bc7aa91cc3eaa8bc19711" prefix=" " category="inline-code"></block> クラスタとネットワークの接続が正常であると表示される（Kubernetes APIを使用してクラスタに外部からアクセスしようとすると成功する）場合は、Astra Controlに指定したkubeconfigが無効になる可能性があります。クラスタでの証明書のローテーションまたは有効期限が原因の可能性があります。この問題を修正するには、を使用して、 Astra Control のクラスタに関連付けられたクレデンシャルを更新します <block ref="3b5a8b5df5e1109560228f052d105111" category="inline-link-macro-rx"></block>。</block>
+  <block id="697923ecbae5d04f6c020c3a1281b674" category="paragraph">Astra Control UI を使用して、 Astra Control Center インストールのユーザーを招待、追加、削除、および編集できます。Astra Control UI またはを使用できます<block ref="414551f2d63a329d9ffea01809d18802" category="inline-link-rx"></block> ユーザを管理するには、を実行</block>
+  <block id="3b47ef8ca687c4acd50cdb86cd25d728" category="paragraph">Astra Control API を使用してアプリケーションを管理する方法については、を参照してください <block ref="b0b6c5cacc086a87359b490b8cd851c4" category="inline-link-macro-rx"></block>。</block>
+  <block id="70c0620c408c69689036ff63d8cf1305" category="paragraph">Kubernetes クラスタ間でアプリケーションとストレージを移動する必要がある場合は、クローニングが役立ちます。たとえば、 CI / CD パイプラインや Kubernetes ネームスペース間でワークロードを移動できます。Astra の UI またはを使用できます<block ref="414551f2d63a329d9ffea01809d18802" category="inline-link-rx"></block> アプリケーションのクローン作成と移行を実行します。</block>
+  <block id="45b6a7a3aac9cfa183be40d41af76237" category="paragraph">Astra Control API を使用してバケットを管理する方法については、を参照してください <block ref="b0b6c5cacc086a87359b490b8cd851c4" category="inline-link-macro-rx"></block>。</block>
+  <block id="baba7b6a78d1e17ef9d995d4bb5f92ad" category="paragraph">Astra Control APIを使用してS3クレデンシャルを削除する方法については、を参照してください <block ref="b0b6c5cacc086a87359b490b8cd851c4" category="inline-link-macro-rx"></block>。</block>
+  <block id="74177b472deeefbaa516812e601a0606" category="paragraph">ロールを管理するには、ネームスペースの制約を追加し、ユーザロールをその制約に制限します。これにより、組織内のリソースへのアクセスを制御できます。Astra Control UI またはを使用できます<block ref="414551f2d63a329d9ffea01809d18802" category="inline-link-rx"></block> をクリックしてください。</block>
+  <block id="0ad9a5dcbe4a8af431f66129feb9dc4f" category="paragraph">評価用ライセンスをフルライセンスに変換したり、既存の評価用ライセンスまたはフルライセンスを新しいライセンスで更新したりできます。フルライセンスがない場合は、ネットアップの営業担当者に連絡して、ライセンスとシリアル番号の全文を入手してください。Astra の UI またはを使用できます<block ref="414551f2d63a329d9ffea01809d18802" category="inline-link-rx"></block> 既存のライセンスを更新します。</block>
+  <block id="62257d007279792f24c04e561593847b" category="paragraph">Astra Control API を使用してストレージバックエンドを管理する方法については、を参照してください <block ref="b0b6c5cacc086a87359b490b8cd851c4" category="inline-link-macro-rx"></block>。</block>
+  <block id="837ec2f0099c7ab8b4717a9c0c69b07d" category="paragraph">Astra Control を使用すると、スナップショットまたはバックアップからアプリケーションをリストアできます。同じクラスタにアプリケーションをリストアする場合、既存の Snapshot からのリストアは高速です。Astra Control UI またはを使用できます<block ref="414551f2d63a329d9ffea01809d18802" category="inline-link-rx"></block> アプリを復元するには、</block>
+  <block id="99e4dbb534854d9092572f3bd856fad4" category="paragraph">詳細については、を参照してください<block ref="2e21778a1246dd7065c2bd9c73a44940" category="inline-link-rx"></block>。</block>
 </blocks>

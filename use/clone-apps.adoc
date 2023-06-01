@@ -14,7 +14,7 @@ summary: 既存のアプリケーションをクローニングして、同じ K
 [role="lead"]
 既存のアプリケーションをクローニングして、同じ Kubernetes クラスタまたは別のクラスタに重複するアプリケーションを作成する。Astra Control Center は、アプリケーションのクローンを作成するときに、アプリケーション構成と永続的ストレージのクローンを作成します。
 
-Kubernetes クラスタ間でアプリケーションとストレージを移動する必要がある場合は、クローニングが役立ちます。たとえば、 CI / CD パイプラインや Kubernetes ネームスペース間でワークロードを移動できます。Astra の UI またはを使用できます https://docs.netapp.com/us-en/astra-automation/index.html["Astra Control API"^] アプリケーションのクローン作成と移行を実行します。
+Kubernetes クラスタ間でアプリケーションとストレージを移動する必要がある場合は、クローニングが役立ちます。たとえば、 CI / CD パイプラインや Kubernetes ネームスペース間でワークロードを移動できます。Astra の UI またはを使用できます https://docs.netapp.com/us-en/astra-automation-2204/index.html["Astra Control API"^] アプリケーションのクローン作成と移行を実行します。
 
 .必要なもの
 アプリケーションを別のクラスタにクローニングするには、デフォルトのバケットが必要です。最初のバケットを追加した時点でデフォルトのバケットになります。

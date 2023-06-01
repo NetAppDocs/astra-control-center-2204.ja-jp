@@ -12,7 +12,7 @@ summary: Astra では、スナップショットまたはバックアップか�
 
 
 [role="lead"]
-Astra Control を使用すると、スナップショットまたはバックアップからアプリケーションをリストアできます。同じクラスタにアプリケーションをリストアする場合、既存の Snapshot からのリストアは高速です。Astra Control UI またはを使用できます https://docs.netapp.com/us-en/astra-automation/index.html["Astra Control API"^] アプリを復元するには、
+Astra Control を使用すると、スナップショットまたはバックアップからアプリケーションをリストアできます。同じクラスタにアプリケーションをリストアする場合、既存の Snapshot からのリストアは高速です。Astra Control UI またはを使用できます https://docs.netapp.com/us-en/astra-automation-2204/index.html["Astra Control API"^] アプリを復元するには、
 
 .このタスクについて
 * アプリケーションをリストアする前に、アプリケーションのスナップショットを作成するか、バックアップすることを強くお勧めします。リストアに失敗した場合に、Snapshotまたはバックアップからクローニングできます。

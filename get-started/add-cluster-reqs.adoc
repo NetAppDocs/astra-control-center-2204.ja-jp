@@ -277,5 +277,5 @@ mv kubeconfig-sa.txt YOUR_CLUSTER_NAME_kubeconfig
 == 詳細については、こちらをご覧ください
 
 * https://docs.netapp.com/us-en/trident/index.html["Trident のドキュメント"^]
-* https://docs.netapp.com/us-en/astra-automation/index.html["Astra Control API を使用"^]
+* https://docs.netapp.com/us-en/astra-automation-2204/index.html["Astra Control API を使用"^]
 

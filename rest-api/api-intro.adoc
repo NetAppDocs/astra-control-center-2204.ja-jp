@@ -15,4 +15,4 @@ Astra Control には REST API が搭載されており、 Curl などのプロ�
 
 Kubernetes アプリケーションをセットアップおよび管理するには、 Astra UI または Astra Control API を使用できます。
 
-詳細については、を参照してください https://docs.netapp.com/us-en/astra-automation/["Astra 自動ドキュメント"^]。
+詳細については、を参照してください https://docs.netapp.com/us-en/astra-automation-2204/["Astra 自動ドキュメント"^]。
