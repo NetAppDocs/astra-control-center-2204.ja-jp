@@ -15,7 +15,7 @@ summary: Helm チャートから Postgres を導入する方法について説�
 
 Postgres は Astra 向けの検証済みアプリケーションです。
 
-* https://docs.netapp.com/us-en/astra-control-center-2204/concepts/validated-vs-standard.html#validated-apps["Astra Controlの検証済みアプリケーションと標準アプリケーションの違いをご確認ください"^]。
+* link:../concepts/validated-vs-standard.html#validated-apps["Astra Controlの検証済みアプリケーションと標準アプリケーションの違いをご確認ください"^]。
 
 
 以下の手順は、 Astra Control Service と Astra Control Center の両方に適用されます。

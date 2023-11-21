@@ -344,11 +344,11 @@ Red Hat OpenShiftクラスタとNetApp Cloud Manager Connectorをインストー
 
 次に、仮想ネットワークの作成、コンピューティングインスタンスのセットアップ、Azure Blobコンテナの作成、Astra Control CenterイメージをホストするAzure Container Register（ACR）の作成、このレジストリへのイメージのプッシュを行うようにAzureを設定します。
 
-Azure のドキュメントに従って、次の手順を実行します。を参照してください https://docs.openshift.com/container-platform/4.8/installing/installing_aws/installing-azure-default.html["Azure への OpenShift クラスタのインストール"^]。
+Azure のドキュメントに従って、次の手順を実行します。を参照してください https://docs.openshift.com/["Azure への OpenShift クラスタのインストール"^]。
 
 . Azure Virtual Networkの作成
 . コンピューティングインスタンスを確認します。Azure の場合、ベアメタルサーバまたは VM を使用できます。
-. インスタンスタイプがまだマスターノードとワーカーノードの Astra 最小リソース要件に一致していない場合は、 Azure でインスタンスタイプを変更して Astra の要件を満たします。を参照してください link:../get-started/requirements.html["Astra Control Center の要件"]。
+. インスタンスタイプがまだマスターノードとワーカーノードの Astra 最小リソース要件に一致していない場合は、 Azure でインスタンスタイプを変更して Astra の要件を満たします。  を参照してください link:../get-started/requirements.html["Astra Control Center の要件"]。
 . バックアップを格納するAzure BLOBコンテナを少なくとも1つ作成します。
 . ストレージアカウントを作成します。Astra Control Center でバケットとして使用するコンテナを作成するには、ストレージアカウントが必要です。
 . バケットへのアクセスに必要なシークレットを作成します。

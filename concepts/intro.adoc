@@ -78,7 +78,7 @@ Astra Control には、次の 2 つの導入モデルがあります。
 
 ネットアップでは、 Snapshot とバックアップの安全性と一貫性を確保するために、いくつかのアプリケーションの検証を行っています。
 
-* https://docs.netapp.com/us-en/astra-control-center-2204/concepts/validated-vs-standard.html#validated-apps["Astra Controlの検証済みアプリケーションと標準アプリケーションの違いをご確認ください"^]。
+* link:../concepts/validated-vs-standard.html#validated-apps["Astra Controlの検証済みアプリケーションと標準アプリケーションの違いをご確認ください"^]。
 
 
 Astra Control で使用するアプリケーションの種類に関係なく、必ず自分でバックアップとリストアのワークフローをテストして、ディザスタリカバリの要件を満たすことを確認してください。
